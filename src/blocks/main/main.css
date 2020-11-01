@@ -8,7 +8,7 @@
   width: 1280px;
   height: 900px;
   background-image: url('../../images/background.png');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   margin: 0 auto
 }

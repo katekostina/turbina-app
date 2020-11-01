@@ -19,10 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1537d252-2468-4f4d-a35a-4e7f0f4948ea" name="Default Changelist" comment="fixed. Removed letter &quot;g&quot;">
+    <list default="true" id="1537d252-2468-4f4d-a35a-4e7f0f4948ea" name="Default Changelist" comment="Added header markdown, logo, list with base styles">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/blocks/main/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/main/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +73,7 @@
       <updated>1604221964107</updated>
       <workItem from="1604221965317" duration="827000" />
       <workItem from="1604223997776" duration="1002000" />
-      <workItem from="1604226453760" duration="5783000" />
+      <workItem from="1604226453760" duration="6082000" />
     </task>
     <task id="LOCAL-00001" summary="fixed. Removed letter &quot;g&quot;">
       <created>1604224719460</created>
@@ -83,7 +82,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604224719460</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added header markdown, logo, list with base styles">
+      <created>1604250855563</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604250855563</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,13 +109,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fixed. Removed letter &quot;g&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed. Removed letter &quot;g&quot;" />
+    <MESSAGE value="Added header markdown, logo, list with base styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added header markdown, logo, list with base styles" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="353" height="280" key="Git.Branch.Popup" timestamp="1604250570715">
+    <state width="353" height="280" key="Git.Branch.Popup" timestamp="1604250866360">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="353" height="280" key="Git.Branch.Popup/0.0.1440.900@0.0.1440.900" timestamp="1604250570715" />
+    <state width="353" height="280" key="Git.Branch.Popup/0.0.1440.900@0.0.1440.900" timestamp="1604250866360" />
     <state width="1419" height="169" key="GridCell.Tab.0.bottom" timestamp="1604223965693">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -134,10 +141,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1604224322032" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1604240642052">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1604250986953">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1604240642052" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1604250986953" />
     <state x="468" y="170" key="git4idea.branch.GitSmartOperationDialog" timestamp="1604222568378">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
