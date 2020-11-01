@@ -6,11 +6,11 @@ class FormApi {
         this.headers = headers;
     }
 }
-export const apiProfile = new Api({
+export const formApi = new FormApi({
     baseUrl: '',
     headers: {
-        authorization: '',
-        'Content-Type': 'application/json'
+       authorization: '',
+       'Content-Type': 'application/json'
     }
 
-});
+ });
