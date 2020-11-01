@@ -1,3 +1,7 @@
+@import url('./__header/main__header.css');
+@import url('./__logo/main__logo.css');
+@import url('./__linkList/main__linksList.css');
+@import url('./__link/main__link.css');
 @import url('./__name/main__name.css');
 
 .main {
