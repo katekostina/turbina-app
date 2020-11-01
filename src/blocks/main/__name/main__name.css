@@ -1,0 +1,28 @@
+.main__name{
+  width: 860px;
+  height: 272px;
+  background-image: url('../../../images/turbina.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 350px) {
+  .main__name{
+  max-width: 300px;
+  min-height: 96px;
+}
+}
+@media screen and (max-width: 410px) {
+  .main__name{
+  max-width: 410px;
+  min-height: 96px;
+}
+}
+
+@media screen and (max-width: 610px) {
+  .main__name{
+  max-width: 510px;
+}
+}
