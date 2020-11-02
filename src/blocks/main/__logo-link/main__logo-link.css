@@ -1,0 +1,10 @@
+.main__logo-link {
+  height: 50px;
+  width: 50px;
+  text-decoration: none;
+  transition: opacity .1s linear .1s;
+}
+
+.main__logo-link:hover {
+  opacity: .8;
+}

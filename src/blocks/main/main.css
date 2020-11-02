@@ -1,7 +1,6 @@
 @import url('./__header/main__header.css');
 @import url('./__logo/main__logo.css');
-@import url('./__linkList/main__linksList.css');
-@import url('./__link/main__link.css');
+@import url('./__logo-link/main__logo-link.css');
 @import url('./__name/main__name.css');
 
 .main {
@@ -10,7 +9,10 @@
   background-image: url('../../images/background.png');
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 0 auto
+  margin: 0 auto;
+  /* Добавлены св-ва для отступов по краям*/
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 @media screen and (max-width: 350px) {

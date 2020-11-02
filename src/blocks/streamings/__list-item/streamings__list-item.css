@@ -1,0 +1,12 @@
+.streamings__list-item {
+  transition: opacity .1s linear .1s;
+  margin-bottom: 10px;
+}
+
+.streamings__list-item:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+.streamings__list-item:hover {
+  opacity: .6;
+}
