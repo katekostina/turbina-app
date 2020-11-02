@@ -1,0 +1,20 @@
+.audioplayer__controls{
+  opacity: 0.5;
+  width: 1200px;
+  height: 44px;
+  border-radius: 10px;
+  background-color: transparent;
+  transition: 1s all;
+  display: flex;
+}
+.audioplayer:hover .audioplayer__controls, .audioplayer:focus .controls {
+  opacity: 1;
+}
+/* button:before {
+  font-family: HeydingsControlsRegular;
+  font-size: 20px;
+  position: relative;
+  content: attr(data-icon);
+  color: #aaa;
+  text-shadow: 1px 1px 0px black;
+} */

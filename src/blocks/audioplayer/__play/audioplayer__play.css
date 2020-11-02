@@ -1,0 +1,8 @@
+.audioplayer__play{
+  width: 32px;
+  height: 28px;
+  background-image: url('../../../images/playButton.svg');
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border-color: transparent;
+}
