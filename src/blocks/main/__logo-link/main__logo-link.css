@@ -8,3 +8,17 @@
 .main__logo-link:hover {
   opacity: .8;
 }
+
+@media screen and (max-width: 1024px) {
+  .main__logo-link {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .main__logo-link {
+    height: 24px;
+    width: 24px;
+  }
+}
