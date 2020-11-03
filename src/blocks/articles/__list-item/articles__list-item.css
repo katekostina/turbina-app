@@ -1,0 +1,23 @@
+.articles__list-item {    
+    margin: 14px 0 0;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .articles__list-item  {
+        font-size: 15px;
+        line-height: 22px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .articles__list-item  {
+        font-size: 16px;
+    }
+}
+
+.articles__list-item:first-of-type {
+    margin-top: 0;
+}
+

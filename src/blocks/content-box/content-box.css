@@ -1,0 +1,29 @@
+.content-box {
+    min-width: 310px;
+    max-width: 1260px;
+    padding: 80px 20px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 8px;
+    text-align: left;
+    font-family: 'Inter', 'Helvetica', sans-serif;
+}
+
+@media screen and (min-width: 320px) {
+    .content-box {
+        padding: 80px 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .content-box {
+        padding: 100px 50px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .content-box {
+        padding: 110px 50px;
+    }
+}
+

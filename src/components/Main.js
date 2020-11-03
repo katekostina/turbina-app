@@ -2,7 +2,7 @@ import React from 'react';
 import '../blocks/main/main.css';
 import '../blocks/streamings/streamings.css';
 import Streamings from './Streamings';
-import Content from './Content.js';
+import ContentBox from './ContentBox.js';
 
 function Main() {
   return (
@@ -16,7 +16,7 @@ function Main() {
       </div>
 
       <div className="main__name" />
-      <Content />
+      <ContentBox />
     </div>
   );
 }
