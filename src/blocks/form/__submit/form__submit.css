@@ -1,0 +1,42 @@
+.form__submit {
+    padding: 0;
+    margin: 50px 0 20px;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 30px;
+    box-sizing: border-box;
+    min-height: 42px;
+    max-width: 100%;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.form__submit:hover {
+    cursor: pointer;
+    font-style: italic;
+}
+
+.form__submit:focus {
+    outline: none;
+    cursor: pointer;
+    font-style: italic;
+}
+
+@media screen and (min-width: 768px) {
+    .form__submit {
+        min-height: 60px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .form__submit {
+        max-width: 600px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .form__submit {
+        font-size: 16px;
+    }
+}

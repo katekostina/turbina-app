@@ -1,0 +1,34 @@
+/* Убираем стандартный чекбокс */
+@supports(-webkit-appearance: none) or (-moz-appearance: none) {
+    .form__checkbox {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+    }
+}
+
+@supports not ((-webkit-appearance: none) or (-moz-appearance: none)) {
+    .form__checkbox:not(:checked),
+    .form__checkbox:checked {
+    position: absolute;
+    left: -9999px;
+    }
+}
+
+.form__checkbox + .form__label:before {
+  content: '';
+  position: absolute;
+  left: 0; 
+  top: 0;
+  width: 28px; 
+  height: 28px;
+  border: 2px solid #000;
+  background: #fff;
+  border-radius: 14px;
+  box-sizing: border-box;
+}
+
+
+.form__checkbox:checked + .form__label:before
+ {
+  background: #000;
+}

@@ -1,0 +1,18 @@
+@import url('./__caption/form__caption.css');
+@import url('./__checkbox/form__checkbox.css');
+@import url('./__heading/form__heading.css');
+@import url('./__input/form__input.css');
+@import url('./__label/form__label.css');
+@import url('./__link/form__link.css');
+@import url('./__submit/form__submit.css');
+@import url('./__textarea/form__textarea.css');
+@import url('./__checkbox-container/form__checkbox-container.css');
+@import url('./__error-text/form__error-text.css');
+@import url('./__error-text/_visible/form__error-text_visible.css');
+@import url('./__input/_error/form__input_error.css');
+@import url('./__textarea/_error/form__textarea_error.css');
+
+.form {
+    display: flex;
+    flex-direction: column;    
+}

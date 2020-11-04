@@ -1,0 +1,4 @@
+.form__textarea_error {
+    border-bottom: 2px solid #f00;
+    color: #f00;
+}
