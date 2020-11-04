@@ -13,10 +13,8 @@ function Main() {
         </a>
           <Streamings />
       </div>
-
       <div className="main__name" />
-
-      <AudioPlayer />
+<AudioPlayer />
     </div>
   );
 }
