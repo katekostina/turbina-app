@@ -17,7 +17,7 @@ function Form() {
         minLength="2"
         required
       />
-      <span class="form__error-text" id="author-name-error-text" />
+      <span className="form__error-text" id="author-name-error-text" />
 
       <input
         className="form__input"
@@ -27,7 +27,7 @@ function Form() {
         minLength="10"
         required
       />
-      <span class="form__error-text" id="telephone-error-text" />
+      <span className="form__error-text" id="telephone-error-text" />
 
       <input
         className="form__input"
@@ -37,7 +37,7 @@ function Form() {
         minLength="3"
         required
       />
-      <span class="form__error-text" id="email-error-text" />
+      <span className="form__error-text" id="email-error-text" />
 
       <TextareaAutosize
         className="form__textarea"
@@ -46,7 +46,7 @@ function Form() {
         minLength="2"
         required
       />
-      <span class="form__error-text" id="poem-error-text">
+      <span className="form__error-text" id="poem-error-text">
         test
       </span>
 
@@ -70,7 +70,7 @@ function Form() {
         Отправить форму
       </button>
       <span
-        class="form__error-text"
+        className="form__error-text"
         id="submit-error-text"
       >
       </span>
