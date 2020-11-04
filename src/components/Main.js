@@ -2,7 +2,7 @@ import React from 'react';
 import  '../blocks/main/main.css';
 import '../blocks/streamings/streamings.css'
 import Streamings from './Streamings'
-import AudioPlayer from './AudioPlayer'
+import AudioPlayer from './AudioPlayer/AudioPlayer'
 function Main() {
   return (
     <div className="main">

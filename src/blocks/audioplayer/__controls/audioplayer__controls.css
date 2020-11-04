@@ -1,15 +1,12 @@
 .audioplayer__controls{
-  opacity: 0.5;
   width: 1200px;
   height: 44px;
   border-radius: 10px;
   background-color: transparent;
-  transition: 1s all;
   display: flex;
+  justify-content: center;
 }
-.audioplayer:hover .audioplayer__controls, .audioplayer:focus .controls {
-  opacity: 1;
-}
+
 /* button:before {
   font-family: HeydingsControlsRegular;
   font-size: 20px;
