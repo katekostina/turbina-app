@@ -1,0 +1,8 @@
+      .bar__progress_knob {
+      position: relative;
+      height: 3px;
+      width: 3px;
+      border: 1.5px solid white;
+      border-radius: 50%;
+      background-color: white;
+  }

@@ -1,0 +1,31 @@
+.audioplayer__timer {
+  line-height: 38px;
+  font-size: 10px;
+  font-family: monospace;
+  text-shadow: 1px 1px 0px black;
+  color: white;
+  flex: 5;
+  display: flex;
+  width: 1px;
+  height: 1px;
+  background-color: white;
+
+}
+
+.audioplayer__timer div {
+  position: absolute;
+  background-color: white;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 38px;
+  z-index: 500;
+}
+
+.timer span {
+  position: absolute;
+  z-index: 3;
+  left: 19px;
+  display: flex;
+
+}

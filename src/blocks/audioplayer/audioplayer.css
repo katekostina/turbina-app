@@ -1,0 +1,15 @@
+@import url('./__play/audioplayer__play.css');
+@import url('./__stop/audioplayer__stop.css');
+@import url('./__controls/audioplayer__controls.css');
+@import url('./__timer/audioplayer__timer.css');
+@import url('./__menu/audioplayer__menu.css');
+
+.audioplayer{
+  display: flex;
+  padding-top: 187px;
+  width: 1238px;
+  height: 44px;
+  display: flex;
+  flex-direction: column;
+
+}

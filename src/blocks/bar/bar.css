@@ -1,0 +1,9 @@
+@import url('./__time/bar__time.css');
+@import url('./__progress/bar__progress.css');
+
+.bar {
+  user-select: none;
+  width: 977px;
+  display: flex;
+  flex-direction: column;
+}

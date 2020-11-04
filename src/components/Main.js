@@ -17,6 +17,7 @@ function Main() {
 
       <div className="main__name" />
       <ContentBox />
+
     </div>
   );
 }

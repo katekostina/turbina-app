@@ -1,0 +1,10 @@
+@import url('./_knob/bar__progress_knob.css');
+
+.bar__progress {
+  flex: 1;
+  border-radius: 5px;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
