@@ -3,7 +3,7 @@ import '../blocks/main/main.css';
 import '../blocks/streamings/streamings.css';
 import Streamings from './Streamings';
 import ContentBox from './ContentBox.js';
-import Audioplayer from './AudioPlayer/AudioPlayer'
+
 function Main() {
   return (
     <div className="main">
@@ -17,7 +17,7 @@ function Main() {
 
       <div className="main__name" />
       <ContentBox />
-      <Audioplayer />
+
     </div>
   );
 }

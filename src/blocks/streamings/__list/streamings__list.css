@@ -1,7 +1,14 @@
 .streamings__list {
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
   list-style: none
+}
+
+@media screen and (max-width: 320px) {
+  .streamings__list {
+    transform: scaleY(0);
+  }
 }

@@ -1,6 +1,6 @@
 .streamings__list-item {
-  transition: opacity .1s linear .1s;
   margin-bottom: 10px;
+  transition: opacity .1s linear .1s;
 }
 
 .streamings__list-item:nth-last-child(1) {
@@ -9,4 +9,10 @@
 
 .streamings__list-item:hover {
   opacity: .6;
+}
+
+@media screen and (max-width: 320px) {
+  .streamings__list-item {
+    margin-bottom: 6px;
+  }
 }
