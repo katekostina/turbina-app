@@ -1,24 +1,21 @@
-// TODO: Доработать стили кнопки
-// TODO: Доработать анимацию
-// TODO: Привести код в порядок
-
 import React, { useState } from 'react';
 
 function Streamings() {
 
   const [streamingsIsOpen, setStreamingsIsOpen] = useState(true);
-  const [streamingsBtnIsClicked, setStreamingsBtnIsClicked] = useState(false)
+  const [streamingsBtnIsClicked, setStreamingsBtnIsClicked] = useState(false);
 
   const handleBtnClick = () => {
     setStreamingsIsOpen(!streamingsIsOpen);
     setStreamingsBtnIsClicked(!streamingsBtnIsClicked);
-  }
+  };
 
   return (
     <div className="streamings">
       <button className={`streamings__open-btn ${streamingsBtnIsClicked 
         ? 'streamings__open-btn_isClicked' : ''}`}
-              onClick={handleBtnClick}>{streamingsBtnIsClicked ? 'X' : 'Стриминги'}</button>
+              onClick={handleBtnClick}>{streamingsBtnIsClicked ? '' : 'Стриминги'}</button>
+
       <ul className={`streamings__list ${streamingsIsOpen ? '' : 'streamings__list_type_mobile'}`}>
         <li className="streamings__list-item">
           <a className="streamings__link" rel="noreferrer" href="https://music.yandex.ru/" target="_blank">
@@ -38,7 +35,7 @@ function Streamings() {
         </li>
       </ul>
     </div>
-  )
+  );
 }
 
 export default Streamings;
