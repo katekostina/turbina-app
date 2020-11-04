@@ -1,0 +1,30 @@
+@import url('./__copyrights/footer__copyrights.css');
+@import url('./__made-by/footer__made-by.css');
+@import url('./__link/footer__link.css');
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0 20px 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: #000; /* #fff после добавления фона*/
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    line-height: 1.8;
+  }
+}
