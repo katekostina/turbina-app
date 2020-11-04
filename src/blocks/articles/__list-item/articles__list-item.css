@@ -4,6 +4,11 @@
     line-height: 16px;
 }
 
+.articles__list-item::before {
+    content: "•";
+    padding-right: 5px;
+}
+
 @media screen and (min-width: 768px) {
     .articles__list-item  {
         font-size: 15px;

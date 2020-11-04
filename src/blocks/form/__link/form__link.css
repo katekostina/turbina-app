@@ -1,0 +1,17 @@
+.form__link {
+    font-size: 12px; 
+    line-height: 22px;
+    color: #000;
+}
+
+@media screen and (min-width: 768px) {
+    .form__link {
+        font-size: 15px; 
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .form__link {
+        font-size: 16px; 
+    }
+}
