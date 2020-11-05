@@ -2,7 +2,6 @@
 @import url('./__stop/audioplayer__stop.css');
 @import url('./__controls/audioplayer__controls.css');
 @import url('./__timer/audioplayer__timer.css');
-@import url('./__menu/audioplayer__menu.css');
 
 .audioplayer{
   padding-top: 187px;
