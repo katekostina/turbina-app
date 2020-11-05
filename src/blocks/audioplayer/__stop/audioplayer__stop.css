@@ -16,5 +16,6 @@
   .audioplayer__stop{
   width: 18px;
   height: 14px;
+  background-size: cover;
 }
 }
