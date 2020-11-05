@@ -1,16 +1,9 @@
-@import url(./vendor/normalize.css);
-@import url(./fonts/Inter/inter.css);
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+@import url('./vendor/normalize.css');
+@import url('./fonts/Inter/inter.css');
+@import url('./blocks/page/page.css');
+@import url('./blocks/main/main.css');
+@import url('./blocks/streamings/streamings.css');
+@import url('./blocks/content-box/content-box.css');
+@import url('./blocks/articles/articles.css');
+@import url('./blocks/form/form.css');
+@import url('./blocks/footer/footer.css');

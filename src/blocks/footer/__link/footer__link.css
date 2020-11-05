@@ -1,3 +1,7 @@
+.footer__link {
+  color: #fff;
+}
+
 .footer__link:hover {
   font-style: italic;
 }

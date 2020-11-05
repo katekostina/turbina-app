@@ -1,6 +1,5 @@
 import React from "react";
 import TextareaAutosize from "react-textarea-autosize";
-import "../blocks/form/form.css";
 
 function Form() {
   return (

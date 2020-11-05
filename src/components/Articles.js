@@ -1,6 +1,5 @@
 import React from "react";
 import { articlesContent } from "../utils/texts.js";
-import "../blocks/articles/articles.css";
 
 function Articles() {
   return (
