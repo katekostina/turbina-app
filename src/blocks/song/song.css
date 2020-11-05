@@ -3,7 +3,9 @@
 
 .song{
   width: 100%;
+  max-width: 620px;
   font-weight: 500;
+  padding-left: 20px;
   font-style: normal;
   font-size: 22px;
   line-height: 26px;
@@ -14,4 +16,33 @@
   text-overflow: ellipsis;
   white-space:nowrap;
   font-family: 'Inter', 'Helvetica', sans-serif;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .song{
+width: 567px;
+
+}
+}
+
+
+@media screen and (max-width: 600px) {
+  .song{
+width: 340px;
+}
+}
+
+@media screen and (max-width: 425px) {
+  .song{
+width: 200px;
+padding-left: 12px;
+}
+}
+
+@media screen and (max-width: 320px) {
+  .song{
+width: 192px;
+}
 }

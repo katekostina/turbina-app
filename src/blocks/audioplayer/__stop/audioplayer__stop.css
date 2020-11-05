@@ -1,7 +1,6 @@
 .audioplayer__stop{
   width: 32px;
   height: 28px;
-  margin-left: 25px;
   background-image: url('../../../images/stopButton.svg');
   background-color: transparent;
   background-repeat: no-repeat;
