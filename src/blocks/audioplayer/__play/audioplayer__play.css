@@ -7,3 +7,6 @@
   border-color: transparent;
   cursor: pointer;
 }
+.audioplayer__play:focus{
+outline: none;
+}

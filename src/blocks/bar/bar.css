@@ -3,7 +3,8 @@
 
 .bar {
   user-select: none;
-  width: 977px;
+  width: 100%;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
 }
