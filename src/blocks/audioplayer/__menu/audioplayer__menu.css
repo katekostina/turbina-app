@@ -12,16 +12,11 @@
 outline: none;
 }
 
-/* @media screen and (max-width: 600px) {
+ @media screen and (max-width: 600px) {
   .audioplayer__menu{
   margin-left: 12px;
   width: 16px;
+  height: 16px;
+  background-size: cover;
 }
 }
-@media screen and (max-width: 550px) {
-  .audioplayer__menu{
-    margin-left: 12px;
-    width: 16px;
-    height: 16px;
-}
-} */
