@@ -8,3 +8,6 @@
   border-color: transparent;
   cursor: pointer;
 }
+.audioplayer__menu:focus{
+outline: none;
+}
