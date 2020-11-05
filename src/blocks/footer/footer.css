@@ -5,10 +5,11 @@
 .footer {
   display: flex;
   justify-content: space-between;
+  width: 100%;
   padding: 20px 0 20px 0;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  color: #000; /* #fff после добавления фона*/
+  color: #fff;
   font-size: 16px;
   line-height: 1.4;
 }

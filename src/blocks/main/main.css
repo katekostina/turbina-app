@@ -5,12 +5,10 @@
 
 .main {
   width: 100%;
-  background-image: url('../../images/background.png');
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0 auto;
   /* Добавлены св-ва для отступов по краям*/
-  padding: 20px;
   box-sizing: border-box;
 }
 

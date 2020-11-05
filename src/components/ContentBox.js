@@ -1,5 +1,4 @@
 import React from "react";
-import "../blocks/content-box/content-box.css";
 import Articles from "./Articles.js";
 import Form from "./Form.js";
 
