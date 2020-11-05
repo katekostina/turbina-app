@@ -10,3 +10,6 @@
 @import url('./blocks/audioplayer/audioplayer.css');
 @import url('./blocks/bar/bar.css');
 @import url('./blocks/song/song.css');
+@import url('./blocks/expander-button/expander-button.css');
+@import url('./blocks/switch-button/switch-button.css');
+@import url('./blocks/expanded-box/expanded-box.css');
