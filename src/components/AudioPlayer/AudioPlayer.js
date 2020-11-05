@@ -3,8 +3,6 @@ import Song from "./Song";
 import Play from "./Play";
 import Pause from "./Pause";
 import useAudioPlayer from './useAudioPlayer';
-import  '../../blocks/audioplayer/audioplayer.css';
-import  '../../blocks/bar/bar.css';
 import {songs} from '../../utils/songs.js'
 
 function Audio(props) {

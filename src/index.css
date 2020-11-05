@@ -7,3 +7,6 @@
 @import url('./blocks/articles/articles.css');
 @import url('./blocks/form/form.css');
 @import url('./blocks/footer/footer.css');
+@import url('./blocks/audioplayer/audioplayer.css');
+@import url('./blocks/bar/bar.css');
+@import url('./blocks/song/song.css');

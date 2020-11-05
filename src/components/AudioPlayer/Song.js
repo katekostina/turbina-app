@@ -1,7 +1,6 @@
 import React from 'react';
-import '../../blocks/song/song.css'
 import {songs} from '../../utils/songs.js'
-// Не сделал поднятие названия и имени исполнителя из файла. 
+// Не сделал поднятие названия и имени исполнителя из файла.
 function Song(props) {
   const { songName, songArtist } = props;
 
