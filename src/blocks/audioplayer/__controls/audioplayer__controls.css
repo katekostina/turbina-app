@@ -1,11 +1,52 @@
 .audioplayer__controls{
-  width: 100%;
+  width: 1200px;
   height: 44px;
   border-radius: 10px;
   background-color: transparent;
   display: flex;
-  justify-content: center;
-  
+  justify-content: space-around;
+  margin: 0 auto
 }
 
 
+
+@media screen and (max-width: 1024px) {
+  .audioplayer__controls{
+width: 950px;
+}
+}
+@media screen and (max-width: 890px) {
+  .audioplayer__controls{
+width: 780px;
+}
+}
+
+@media screen and (max-width: 768px) {
+  .audioplayer__controls{
+width: 720px;
+}
+}
+
+@media screen and (max-width: 650px) {
+  .audioplayer__controls{
+width: 510px;
+}
+}
+
+@media screen and (max-width: 540px) {
+  .audioplayer__controls{
+width: 400px;
+}
+}
+
+@media screen and (max-width: 375px) {
+  .audioplayer__controls{
+width: 340px;
+}
+}
+
+@media screen and (max-width: 320px) {
+  .audioplayer__controls{
+width: 300px;
+}
+}

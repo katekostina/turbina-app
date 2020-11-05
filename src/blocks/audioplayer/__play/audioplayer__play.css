@@ -1,9 +1,9 @@
 .audioplayer__play{
   width: 32px;
   height: 28px;
-  margin-left: 25px;
   background-image: url('../../../images/playButton.svg');
   background-color: transparent;
+  background-position: center;
   background-repeat: no-repeat;
   border-color: transparent;
   cursor: pointer;
@@ -15,8 +15,8 @@ outline: none;
 
 @media screen and (max-width: 350px) {
   .audioplayer__play{
-  width: 18px;
-  height: 14px;
+    width: 16px;
+    height: 13px;
   background-size: cover;
 }
 }

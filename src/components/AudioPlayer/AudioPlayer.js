@@ -1,12 +1,12 @@
-import React from "react";
+import React, {useState} from "react";
 import Song from "./Song";
 import Play from "./Play";
 import Pause from "./Pause";
-import useAudioPlayer from './useAudioPlayer';
+// import useAudioPlayer from './useAudioPlayer';
 import {songs} from '../../utils/songs.js'
 
 function Audio(props) {
-  const { curTime, duration, playing, setPlaying, setClickedTime } = useAudioPlayer();
+  const [playing, setPlaying] = useState(false);
 
   return (
     <div className="audioplayer">
@@ -27,7 +27,7 @@ function Audio(props) {
       </div>
     </div>
     <span className="bar__time">00:00</span>
-      <button className="audioplayer__menu" onClick={console.log('hello')}></button>
+      <button className="audioplayer__menu"></button>
       </div>
     </div>
   );
