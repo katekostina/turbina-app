@@ -23,7 +23,7 @@ function Audio(props) {
         }
         <div className="bar">
       <span className="bar__time"></span>
-      <Song songName="Instant Crush —" songArtist="&nbsp; Daft Punk ft. Julian Casablancas" />
+      <Song songName="Instant Crush —" songArtist="&nbsp; Daft Punk ft. Julian Casablancas12312321" />
       <div className="bar__progress">
         <span className="bar__progress_knob"/>
       </div>

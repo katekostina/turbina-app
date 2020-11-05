@@ -3,5 +3,28 @@
   font-style: normal;
   font-size: 22px;
   line-height: 26px;
-  margin: 0
+  margin: 0;
+  width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space:nowrap
+}
+
+@media screen and (max-width: 650px) {
+  .song__artist{
+  font-size: 16px;
+}
+
+}
+@media screen and (max-width: 450px) {
+  .song__artist{
+    width: 180px;
+    font-size: 14px;
+}
+}
+@media screen and (max-width: 320px) {
+  .song__artist{
+    width: 150px;
+    font-size: 14px;
+}
 }

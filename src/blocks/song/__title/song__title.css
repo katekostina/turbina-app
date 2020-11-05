@@ -5,3 +5,15 @@
   line-height: 26px;
   margin: 0
 }
+
+@media screen and (max-width: 650px) {
+  .song__title{
+  font-size: 16px;
+}
+
+}
+@media screen and (max-width: 410px) {
+  .song__title{
+    font-size: 14px;
+}
+}

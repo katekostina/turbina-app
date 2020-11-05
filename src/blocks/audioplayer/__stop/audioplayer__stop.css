@@ -11,3 +11,10 @@
 .audioplayer__stop:focus{
   outline: none;
 }
+
+@media screen and (max-width: 350px) {
+  .audioplayer__stop{
+  width: 18px;
+  height: 14px;
+}
+}

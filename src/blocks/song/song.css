@@ -2,12 +2,15 @@
 @import url('./__title/song__title.css');
 
 .song{
-  width: 620px;
+  width: 100%;
   font-weight: 500;
   font-style: normal;
   font-size: 22px;
   line-height: 26px;
   display: flex;
   flex-direction: row;
-  color: #ffffff
+  color: #ffffff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space:nowrap
 }
