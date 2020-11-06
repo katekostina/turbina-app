@@ -3,6 +3,7 @@
     max-width: 1260px;
     padding: 80px 20px;
     background-color: #fff;
+    box-sizing: border-box;
     color: #000;
     border-radius: 8px;
     text-align: left;

@@ -4,7 +4,7 @@ import TextareaAutosize from "react-textarea-autosize";
 function Form() {
   return (
     <form className="form" name="poem-form">
-      <h2 className="form__heading">Форма.</h2>
+      <h2 className="form__heading">Форма</h2>
       <p className="form__caption">
         Заполняя эту форму, вы становитесь частью проекта.
       </p>
