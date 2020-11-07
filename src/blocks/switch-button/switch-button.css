@@ -2,6 +2,7 @@
   padding: 2px 2px;
   border: 2px solid #fff;
   border-radius: 30px;
+  grid-area: switch-button;
   background-color: transparent;
   font-family: "Inter", Arial, sans-serif;
   font-weight: 400;

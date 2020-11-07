@@ -9,6 +9,7 @@
   background-repeat: no-repeat;
   border: 0;
   cursor: pointer;
+  grid-area: expander-button;
   transition: opacity .1s linear .1s;
   padding: 0;
   background-size: contain;

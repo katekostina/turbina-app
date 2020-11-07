@@ -10,24 +10,10 @@
   box-sizing: border-box;
 }
 
-.play-button {
-  grid-area: play-button;
-}
 
-.song {
-  grid-area: song;
-}
-
-.switch-button {
-  grid-area: switch-button;
-}
-
-.expander-button {
-  grid-area: expander-button;
-}
-
-.expanded-box {
-  grid-area: expanded-box;
-}
-
-
+/*
+expanded-box  - grid-area: expanded-box,
+expander-button - grid-area: expander-button,
+play-button - grid-area: play-button,
+switch-button - grid-area: swithc-button 
+*/
