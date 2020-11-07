@@ -11,7 +11,7 @@ import { songs } from "../../utils/songs.js";
 
 function AudioPlayer(props) {
   const [playing, setPlaying] = useState(false);
-  const [expandedBox, setExpandedBox] = useState(true);
+  const [expandedBox, setExpandedBox] = useState(false);
   const [lyricsShown, setLyricsShown] = useState(songs.length < 2);
 
   function toggleExpandedBox() {
