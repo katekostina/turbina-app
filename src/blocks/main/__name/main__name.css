@@ -16,12 +16,6 @@
 }
 }
 
-@media screen and (max-width: 720px) {
-  .main__name{
-  width: 620px;
-  height: 192px;
-}
-}
 
 @media screen and (max-width: 610px) {
   .main__name{
