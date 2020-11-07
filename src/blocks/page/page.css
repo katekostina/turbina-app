@@ -5,5 +5,7 @@
   margin: 0 auto;
   background: url('../../images/background.png') fixed;
   background-size: cover;
-  padding: 20px;
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
 }

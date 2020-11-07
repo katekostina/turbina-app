@@ -1,28 +1,23 @@
-.song__title {
+.song__timer {
   color: #fff;
-  font-family: 'Inter', 'Helvetica', sans-serif;
+  font-family: "Inter", "Helvetica", sans-serif;
   font-weight: 500;
   display: inline-block;
-  max-width: 80%;
-  text-overflow: clip;
-  white-space: nowrap;
-  overflow: hidden;
   font-size: 14px;
   line-height: 19px;
+  white-space: nowrap;
 }
 
 @media screen and (min-width: 768px) {
-  .song__title {
+  .song__timer {
     font-size: 18px;
     line-height: 22px;
-    max-width: 90%;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .song__title {
+  .song__timer {
     font-size: 20px;
     line-height: 24px;
   }
 }
-

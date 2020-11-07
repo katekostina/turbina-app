@@ -3,6 +3,9 @@
   width: 50px;
   text-decoration: none;
   transition: opacity .1s linear .1s;
+
+  /* additional padding for screen min-width 320px  */
+  padding-top: 3px;
 }
 
 .main__logo-link:hover {
@@ -20,5 +23,11 @@
   .main__logo-link {
     height: 24px;
     width: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main__logo-link {
+    padding-top: 5px;
   }
 }

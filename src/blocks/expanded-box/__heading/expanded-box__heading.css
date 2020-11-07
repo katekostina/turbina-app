@@ -3,7 +3,21 @@
     color: #fff;
     font-style: italic;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    margin: 0;
+    font-size: 14px;
+    line-height: 19px;
+    margin: 0 0 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .expanded-box__heading {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+@media screen and (min-width: 1280) {
+    .expanded-box__heading {
+        font-size: 20px;
+        line-height: 25px;
+    }
 }

@@ -1,0 +1,19 @@
+.play-button__pause {
+  background-image: url("../../../images/stopButton.svg");
+  width: 11px;
+  height: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .play-button__pause {
+    width: 12px;
+    height: 14px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .play-button__pause {
+    width: 13px;
+    height: 16px;
+  }
+}

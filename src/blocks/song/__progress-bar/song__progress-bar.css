@@ -1,0 +1,7 @@
+.song__progress-bar {
+    width: 100%;
+    box-sizing: border-box;
+    height: 3px;
+    border-bottom: 3px solid rgba(243, 243, 243, 0.3);
+    cursor: pointer;
+}

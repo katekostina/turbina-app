@@ -2,14 +2,18 @@
 @import url('./_type/expander-button_type-cross.css');
 
 .expander-button {
+  box-sizing: border-box;
   width: 32px;
   height: 28px;
-  margin-left: 26px;
   background-color: transparent;
   background-repeat: no-repeat;
-  border-color: transparent;
+  border: 0;
   cursor: pointer;
   transition: opacity .1s linear .1s;
+  padding: 0;
+  background-size: contain;
+  margin-left: 20px;
+
 }
 
 .expander-button:focus {
@@ -24,16 +28,13 @@
   .expander-button {
     width: 24px;
     height: 24px;
-    background-position: center;
+    margin-left: 11px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .expander-button {
-    margin-right: 13px;
-    margin-left: 11px;
     width: 16px;
     height: 16px;
-    background-size: contain;
   }
 }

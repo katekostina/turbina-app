@@ -1,3 +1,24 @@
 .expanded-box__text {
     white-space: pre-line;
+    font-family: 'Inter', 'Helvetica', sans-serif;
+    color: #fff;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .expanded-box__text {
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+
+@media screen and (min-width: 1280) {
+    .expanded-box__text {
+        font-size: 20px;
+        line-height: 25px;
+    }
 }

@@ -1,16 +1,17 @@
 import React, { useState } from "react";
 import Song from "./Song";
-import Play from "./Play";
-import Pause from "./Pause";
+import PlayButton from "./PlayButton";
 import Playlist from "./Playlist";
 import SwitchButton from "./SwitchButton";
-// import useAudioPlayer from './useAudioPlayer';
-import { songs } from "../../utils/songs.js";
 import ExpanderButton from "./ExpanderButton";
+
+import { songs } from "../../utils/songs.js";
+
+// import useAudioPlayer from './useAudioPlayer';
 
 function AudioPlayer(props) {
   const [playing, setPlaying] = useState(false);
-  const [expandedBox, setExpandedBox] = useState(false);
+  const [expandedBox, setExpandedBox] = useState(true);
   const [lyricsShown, setLyricsShown] = useState(songs.length < 2);
 
   function toggleExpandedBox() {
@@ -22,42 +23,31 @@ function AudioPlayer(props) {
   }
 
   return (
-    <div className="audioplayer">
+    <div className={"audioplayer " + (expandedBox ? "audioplayer_expanded" : "audioplayer_collapsed")}>
       <audio id="audio">
-        <source src="./song.mp3" />
+        <source src={songs[0].url} />
         Your browser does not support the <code>audio</code> element.
       </audio>
-      <div className="audioplayer__controls">
-        {playing ? (
-          <Pause handleClick={() => setPlaying(false)} />
-        ) : (
-          <Play handleClick={() => setPlaying(true)} />
-        )}
-        <div className="bar">
-          <span className="bar__time"></span>
-          <Song
-            songName="Instant Crush —"
-            songArtist="&nbsp; Daft Punk ft. Julian Casablancas"
-          />
-          <div className="bar__progress">
-            <span className="bar__progress_knob" />
-          </div>
-        </div>
-        <span className="bar__time">00:00</span>
-        {expandedBox && (
-          <SwitchButton lyricsShown={lyricsShown} onClick={toggleLyricsShown} />
-        )}
-        <ExpanderButton onClick={toggleExpandedBox} isExpanded={expandedBox} />
-      </div>
+
+      <PlayButton handleClick={() => setPlaying(!playing)} isPlaying={playing} />
+
+      <Song songTitle={songs[0].title} songTime="2:24" />
+
+      {expandedBox && (
+        <SwitchButton lyricsShown={lyricsShown} onClick={toggleLyricsShown} />
+      )}
+
+      <ExpanderButton onClick={toggleExpandedBox} isExpanded={expandedBox} />
+
       {expandedBox && (
         <div className="expanded-box">
-          <h3 className="expanded-box__heading">{lyricsShown ? "Текст песни:" : "Релизы:"}</h3>
+          <h3 className="expanded-box__heading">
+            {lyricsShown ? "Текст песни:" : "Релизы:"}
+          </h3>
           {lyricsShown && (
-            <p className="expanded-box__text">
-              {songs[0].lyrics}
-            </p>            
-            )}
-          {!lyricsShown && (<Playlist />)} 
+            <p className="expanded-box__text">{songs[0].lyrics}</p>
+          )}
+          {!lyricsShown && <Playlist />}
         </div>
       )}
     </div>
