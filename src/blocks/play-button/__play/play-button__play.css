@@ -1,0 +1,19 @@
+.play-button__play {
+  background-image: url("../../../images/playButton.svg");
+  width: 13px;
+  height: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .play-button__play {
+    width: 15px;
+    height: 18px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .play-button__play {
+    width: 16px;
+    height: 20px;
+  }
+}

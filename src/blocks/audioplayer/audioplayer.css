@@ -1,9 +1,33 @@
-@import url('./__play/audioplayer__play.css');
-@import url('./__stop/audioplayer__stop.css');
-@import url('./__controls/audioplayer__controls.css');
-@import url('./__timer/audioplayer__timer.css');
+@import './_expanded/audioplayer_expanded.css';
+@import './_collapsed/audioplayer_collapsed.css';
 
-.audioplayer{
-  padding-top: 187px;
-  width: 100%;
+.audioplayer {
+  min-width: 290px;
+  max-width: 1280px;
+  min-height: 35px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
+
+.play-button {
+  grid-area: play-button;
+}
+
+.song {
+  grid-area: song;
+}
+
+.switch-button {
+  grid-area: switch-button;
+}
+
+.expander-button {
+  grid-area: expander-button;
+}
+
+.expanded-box {
+  grid-area: expanded-box;
+}
+
+

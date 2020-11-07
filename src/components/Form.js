@@ -59,7 +59,7 @@ function Form() {
         />
         <label className="form__label" htmlFor="checkbox">
           Согласен с{" "}
-          <a className="form__link" href="#">
+          <a className="form__link" href="#" target="_blank">
             офертой
           </a>
         </label>

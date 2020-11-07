@@ -3,4 +3,17 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
+
+  /* header paddings for screen width 320 */
+  padding-top: 13px;
+  padding-right: 13px;
+  padding-left: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .main__header {
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-left: 20px
+  }
 }

@@ -1,15 +1,17 @@
-import React from 'react';
-import {songs} from '../../utils/songs.js'
-// Не сделал поднятие названия и имени исполнителя из файла.
-function Song(props) {
-  const { songName, songArtist } = props;
+import React from "react";
 
+function Song(props) {
   return (
     <div className="song">
-      <h1 className="song__title">{songName}</h1>
-      <h2 className="song__artist">{songArtist}</h2>
+      <div className="song__container">
+        <span className="song__title">{props.songTitle}</span>
+        <span className="song__timer">{props.songTime}</span>
+      </div>
+      <div className="song__progress-bar">
+        <div className="song__progress-knob" />
+      </div>
     </div>
-  )
+  );
 }
 
 export default Song;

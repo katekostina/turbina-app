@@ -5,18 +5,19 @@
   max-height: 104px;
   overflow-y: scroll;
   overflow-x: hidden;
-  margin: 30px 0;
-
-  color: #fff;
-  font-family: 'Inter', 'Helvetica', sans-serif;
-  font-weight: 500;
-  font-style: italic;
-  font-size: 20px;
-  line-height: 27px;
+  margin: 0;
+  height: 80px;
 
   /* styling scrollbar for firefox */
   scrollbar-width: thin;
   scrollbar-color: rgba(255, 255, 255, 0.3) rgba(243, 243, 243, 0.1);
+}
+
+@media screen and (min-width: 768px) {
+  .expanded-box {
+    margin-top: 28px;
+    height: 96px;
+  }
 }
 
 /* styling scrollbar for chrome and safari */

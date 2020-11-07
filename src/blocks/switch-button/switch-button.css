@@ -1,28 +1,52 @@
 .switch-button {
-    display: inline-block;
-    padding: 2px 2px;
-    border: 2px solid #fff;
-    border-radius: 30px;
-    background-color: transparent;
-    font-family: 'Inter', Arial, sans-serif;
-    font-weight: 400;
-    color: #fff;
-    font-size: 16px;
-    line-height: 16px;
-    white-space: nowrap;
-    text-align: center;
-    margin-left: 20px;
-    max-height: 35px;
-    min-width: 135px;
-    transition: opacity .1s linear .05s;
-    cursor: pointer;
+  padding: 2px 2px;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  background-color: transparent;
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 16px;
+  line-height: 16px;
+  white-space: nowrap;
+  text-align: center;
+  transition: opacity 0.1s linear 0.05s;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  height: 31px;
+  min-width: 125px;
+  width: 100%;
+  font-size: 12px;
+  line-height: 15px;
+  margin-top: 21px;
 }
 
 .switch-button:hover {
-    opacity: .6;
-    font-style: italic;
+  opacity: 0.6;
+  font-style: italic;
 }
 
 .switch-button:focus {
-    outline: none;
+  outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .switch-button {
+    height: 34px;
+    width: 125px;
+    font-size: 15px;
+    line-height: 19px;
+    margin-top: 0px;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .switch-button {
+    height: 35px;
+    width: 135px;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

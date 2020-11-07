@@ -1,0 +1,23 @@
+.audioplayer_expanded {
+  display: grid;
+  grid-template-columns: 40px 1fr 40px;
+  grid-template-rows: 35px 82px 110px;
+  grid-template-areas:
+    "play-button song expander-button"
+    ". switch-button ."
+    ". expanded-box .";
+}
+
+@media screen and (min-width: 768px) {
+    .audioplayer_expanded {
+        display: grid;
+        grid-template-columns: 60px 1fr 145px 69px;
+        grid-template-rows: 37px 152px;
+         grid-template-areas: "play-button song switch-button expander-button"
+                             ". expanded-box expanded-box .";
+    }
+}
+
+
+
+

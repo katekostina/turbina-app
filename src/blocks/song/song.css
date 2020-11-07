@@ -1,48 +1,15 @@
-@import url('./__artist/song__artist.css');
 @import url('./__title/song__title.css');
+@import url('./__timer/song__timer.css');
+@import url('./__progress-bar/song__progress-bar.css');
+@import url('./__progress-knob/song__progress-knob.css');
+@import url('./__container/song__container.css');
 
-.song{
-  width: 100%;
-  max-width: 620px;
-  font-weight: 500;
-  padding-left: 20px;
-  font-style: normal;
-  font-size: 20px;
-  line-height: 24px;
+.song {
+  box-sizing: border-box;
+  min-width: 240px;
+  user-select: none;
   display: flex;
-  flex-direction: row;
-  color: #ffffff;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space:nowrap;
-  font-family: 'Inter', 'Helvetica', sans-serif;
-}
-
-
-
-@media screen and (max-width: 768px) {
-  .song{
-width: 567px;
-
-}
-}
-
-
-@media screen and (max-width: 600px) {
-  .song{
-width: 340px;
-}
-}
-
-@media screen and (max-width: 425px) {
-  .song{
-width: 200px;
-padding-left: 12px;
-}
-}
-
-@media screen and (max-width: 320px) {
-  .song{
-width: 192px;
-}
+  flex-direction: column;
+  justify-content: space-between;
+  
 }

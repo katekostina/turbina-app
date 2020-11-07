@@ -1,0 +1,29 @@
+@import './__play/play-button__play.css';
+@import './__pause/play-button__pause.css';
+
+.play-button {
+  border: 0;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: opacity .1s linear .1s;
+
+  margin-left: 15px;
+}
+
+.play-button:focus {
+    outline: none;
+}
+
+.play-button:hover {
+  opacity: 0.6;
+}
+
+@media screen and (min-width: 768px) {
+  .play-button {
+    margin-left: 25px;
+  }
+}
