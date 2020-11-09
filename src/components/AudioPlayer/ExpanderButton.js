@@ -1,6 +1,6 @@
 import React from "react";
 
-let classNames = require('classnames');
+const classNames = require('classnames');
 
 const ExpanderButton = ({ onClick, isExpanded }) =>
   <button

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { streamingsList } from '../utils/streamingsLinkList';
 
 function Streamings() {
-  let classNames = require('classnames');
+  const classNames = require('classnames');
 
   const [streamingsIsOpen, setStreamingsIsOpen] = useState(true);
   const [streamingsBtnIsClicked, setStreamingsBtnIsClicked] = useState(false);

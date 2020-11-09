@@ -11,7 +11,7 @@ import song from "./1.mp3"
 
 function AudioPlayer() {
 
-  let classNames = require('classnames');
+  const classNames = require('classnames');
 
   const [expandedBox, setExpandedBox] = useState(false);
   const [lyricsShown, setLyricsShown] = useState(songs.length < 2);
