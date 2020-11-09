@@ -1,3 +1,24 @@
 .footer__made-by {
   margin: 0;
+  color: #fff;
+  font-family: 'Inter', 'Helvetica', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__made-by {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+}
+
+@media screen and (min-width: 1280px) {
+  .footer__made-by {
+    font-size: 16px;
+    line-height: 1.4;
+  }
 }

@@ -4,11 +4,10 @@
     padding: 80px 20px;
     background-color: #fff;
     box-sizing: border-box;
+    font-family: 'Inter', 'Helvetica', 'Arial', sans-serif;
     color: #000;
     border-radius: 8px;
     text-align: left;
-    font-family: 'Inter', 'Helvetica', sans-serif;
-
     margin-left: 5px;
     margin-right: 5px;
 }

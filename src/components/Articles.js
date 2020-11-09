@@ -7,8 +7,8 @@ function Articles() {
       {/* Если массив с контентом статей не пустой, то рендерим содержимое */}
       {articlesContent && (
         <div className="articles">
-          {articlesContent.map((article, i) => (
-            <article className="articles__article" key={i}>
+          {articlesContent.map((article) => (
+            <article className="articles__article" key={article.id}>
 
               {/* Если есть заголовок — рендерим его */}
               {article.heading && (
@@ -18,9 +18,9 @@ function Articles() {
               {/* Если есть абзацы текста, то отрендерить их  */}
               {article.paragraphs && (
                 <>
-                  {article.paragraphs.map((paragraph, i) => (
-                    <p className="articles__paragraph" key={i}>
-                      {paragraph}
+                  {article.paragraphs.map((paragraph) => (
+                    <p className="articles__paragraph" key={paragraph.id}>
+                      {paragraph.text}
                     </p>
                   ))}
                 </>
@@ -29,9 +29,9 @@ function Articles() {
               {/* Если есть список, то отрендерить его */}
               {article.list && (
                 <ul className="articles__list">
-                  {article.list.map((item, i) => (
-                    <li className="articles__list-item" key={i}>
-                      {item}
+                  {article.list.map((item) => (
+                    <li className="articles__list-item" key={item.id}>
+                      {item.text}
                     </li>
                   ))}
                 </ul>

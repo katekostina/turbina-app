@@ -1,9 +1,13 @@
 .form__error-text {
-    color: #f00;
-    font-size: 14px;
-    line-height: 20px;
     visibility: hidden;
     max-width: 100%;
+
+    color: #f00;
+    font-family: 'Inter', 'Helvetica', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 @media screen and (min-width: 768px) {

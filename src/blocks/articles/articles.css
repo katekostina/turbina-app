@@ -7,6 +7,8 @@
 .articles {
     min-width: 270px;
     max-width: 100%;
+    color: #000;
+    font-family: 'Inter', 'Helvetica', 'Arial', sans-serif;
 }
 
 @media screen and (min-width: 1024px) {
@@ -17,6 +19,6 @@
 
 @media screen and (min-width: 1280px) {
     .articles {
-        width: 65%;
+        width: 65.5%;
     }
 }

@@ -14,5 +14,9 @@
 
 .form {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
+    color: #000;
+    font-family: 'Inter', 'Helvetica', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
 }

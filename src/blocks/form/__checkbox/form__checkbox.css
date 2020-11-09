@@ -1,12 +1,11 @@
 /* Убираем стандартный чекбокс */
-@supports(-webkit-appearance: none) or (-moz-appearance: none) {
+@supports(appearance: none) {
     .form__checkbox {
-      -webkit-appearance: none;
-      -moz-appearance: none;
+      appearance: none;
     }
 }
 
-@supports not ((-webkit-appearance: none) or (-moz-appearance: none)) {
+@supports not (appearance: none) {
     .form__checkbox:not(:checked),
     .form__checkbox:checked {
     position: absolute;

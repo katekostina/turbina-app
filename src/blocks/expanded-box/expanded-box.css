@@ -8,6 +8,8 @@
   margin: 0;
   height: 80px;
   grid-area: expanded-box;
+  font-family: 'Inter', 'Helvetica', 'Arial', sans-serif;
+  color: #fff;
   /* styling scrollbar for firefox */
   scrollbar-width: thin;
   scrollbar-color: rgba(255, 255, 255, 0.3) rgba(243, 243, 243, 0.1);
