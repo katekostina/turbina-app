@@ -14,7 +14,6 @@
   padding: 0;
   background-size: contain;
   margin-left: 20px;
-
 }
 
 .expander-button:focus {
@@ -29,7 +28,6 @@
   .expander-button {
     width: 24px;
     height: 24px;
-    margin-left: 11px;
   }
 }
 
@@ -37,5 +35,6 @@
   .expander-button {
     width: 16px;
     height: 16px;
+    margin-left: 11px;
   }
 }
