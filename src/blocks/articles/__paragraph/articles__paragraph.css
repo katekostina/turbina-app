@@ -1,7 +1,9 @@
 .articles__paragraph {
     max-width: 100%;
-    font-weight: 400;
     margin: 20px 0 0;
+    font-family: 'Inter', 'Helvetica', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
     font-size: 12px;
     line-height: 16px;
 }

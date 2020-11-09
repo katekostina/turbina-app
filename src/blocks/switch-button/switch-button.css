@@ -4,8 +4,9 @@
   border-radius: 30px;
   grid-area: switch-button;
   background-color: transparent;
-  font-family: "Inter", Arial, sans-serif;
+  font-family: 'Inter', 'Helvetica', 'Arial', sans-serif;
   font-weight: 400;
+  font-style: normal;
   color: #fff;
   font-size: 16px;
   line-height: 16px;

@@ -1,10 +1,14 @@
 .form__label {
-    font-size: 12px; 
-    line-height: 22px;
     position: relative;
     padding-left: 40px;
     padding-top: 6px;
     cursor: pointer;
+    color: #000;
+    font-family: 'Inter', 'Helvetica', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
 }
 
 @media screen and (min-width: 768px) {

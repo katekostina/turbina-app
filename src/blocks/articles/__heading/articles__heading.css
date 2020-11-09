@@ -1,9 +1,11 @@
 .articles__heading {
     max-width: 100%;
+    margin: 0 0 30px;
     text-transform: uppercase;
+    color: #000;
+    font-family: 'Inter', 'Helvetica', 'Arial', sans-serif;
     font-style: italic;
     font-weight: 400;
-    margin: 0 0 30px;
     font-size: 32px;
     line-height: 39px;
 }

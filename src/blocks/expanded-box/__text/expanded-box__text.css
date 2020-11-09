@@ -1,6 +1,6 @@
 .expanded-box__text {
     white-space: pre-line;
-    font-family: 'Inter', 'Helvetica', sans-serif;
+    font-family: 'Inter', 'Helvetica', 'Arial', sans-serif;
     color: #fff;
     font-style: italic;
     font-weight: 400;
