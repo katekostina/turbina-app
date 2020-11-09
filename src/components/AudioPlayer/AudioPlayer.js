@@ -11,9 +11,12 @@ import song from "./1.mp3"
 
 function AudioPlayer() {
 
+  let classNames = require('classnames');
+
   const [expandedBox, setExpandedBox] = useState(false);
   const [lyricsShown, setLyricsShown] = useState(songs.length < 2);
   const { curTime, duration, playing, setPlaying, setClickedTime } = useAudioPlayer();
+
   function toggleExpandedBox() {
     setExpandedBox(!expandedBox);
   }
@@ -22,7 +25,10 @@ function AudioPlayer() {
   }
 
   return (
-    <div className={"audioplayer " + (expandedBox ? "audioplayer_expanded" : "audioplayer_collapsed")}>
+    <div className={classNames("audioplayer", {
+      "audioplayer_expanded": expandedBox,
+      "audioplayer_collapsed": !expandedBox
+    })}>
       <audio id="audio">
         <source src={song}  type="audio/mp3"/>
         Your browser does not support the <code>audio</code> element.

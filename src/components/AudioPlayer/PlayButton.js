@@ -1,12 +1,14 @@
 import React from "react";
 
-function PlayButton({isPlaying, handleClick}) {
-  return (
-    <button
-      className={"play-button " + (isPlaying ? "play-button__pause" : "play-button__play")}
-      onClick={handleClick}
-    ></button>
-  );
-}
+let classNames = require('classnames');
+
+const PlayButton = ({ isPlaying, handleClick } )  =>
+  <button
+  className={classNames("play-button", {
+    "play-button__pause": isPlaying,
+    "play-button__play": !isPlaying,
+  })}
+  onClick={handleClick}
+  />
 
 export default PlayButton;

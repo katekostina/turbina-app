@@ -18,7 +18,8 @@ function Streamings() {
       <button className={classNames('streamings__open-btn', {
         'streamings__open-btn_is-clicked': streamingsBtnIsClicked,
       })}
-              onClick={handleBtnClick}>{streamingsBtnIsClicked ? '' : 'Стриминги'}
+              onClick={handleBtnClick}>
+        {streamingsBtnIsClicked ? '' : 'Стриминги'}
       </button>
 
       <ul className={classNames('streamings__list', {
