@@ -4,15 +4,16 @@ import PlayButton from "./PlayButton";
 import Playlist from "./Playlist";
 import SwitchButton from "./SwitchButton";
 import ExpanderButton from "./ExpanderButton";
-
 import { songs } from "../../utils/songs.js";
 
 // import useAudioPlayer from './useAudioPlayer';
 
-function AudioPlayer(props) {
+function AudioPlayer() {
   const [playing, setPlaying] = useState(false);
   const [expandedBox, setExpandedBox] = useState(false);
   const [lyricsShown, setLyricsShown] = useState(songs.length < 2);
+
+
 
   function toggleExpandedBox() {
     setExpandedBox(!expandedBox);
@@ -37,10 +38,12 @@ function AudioPlayer(props) {
         <SwitchButton lyricsShown={lyricsShown} onClick={toggleLyricsShown} />
       )}
 
-      <ExpanderButton onClick={toggleExpandedBox} isExpanded={expandedBox} />
+      <ExpanderButton  onClick={toggleExpandedBox} isExpanded={expandedBox} />
 
       {expandedBox && (
+
         <div className="expanded-box">
+
           <h3 className="expanded-box__heading">
             {lyricsShown ? "Текст песни:" : "Релизы:"}
           </h3>
@@ -48,7 +51,9 @@ function AudioPlayer(props) {
             <p className="expanded-box__text">{songs[0].lyrics}</p>
           )}
           {!lyricsShown && <Playlist />}
+
         </div>
+
       )}
     </div>
   );

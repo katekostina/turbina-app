@@ -1,14 +1,15 @@
 .audioplayer_collapsed {
     display: grid;
     grid-template-columns: 40px 1fr 40px;
-    grid-template-rows: 35px 20px; 
+    grid-template-rows: 35px 20px;
     grid-template-areas: "play-button song expander-button";
+    transition: ease-in-out 1s;
 }
 
 @media screen and (min-width: 768px) {
     .audioplayer_collapsed {
       grid-template-columns: 60px 1fr 69px;
-      grid-template-rows: 35px 20px; 
+      grid-template-rows: 35px 20px;
       grid-template-areas: "play-button song expander-button";
     }
   }

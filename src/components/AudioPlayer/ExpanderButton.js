@@ -1,11 +1,11 @@
 import React from "react";
 
-function ExpanderButton(props) {
-  
+function ExpanderButton({onClick, isExpanded}) {
+
   return (
     <button
-      className={"expander-button " + (props.isExpanded ? "expander-button_type-cross" : "expander-button_type-arrow")}
-      onClick={props.onClick}
+      className={"expander-button " + (isExpanded ? "expander-button_type-cross" : "expander-button_type-arrow")}
+      onClick={onClick}
     ></button>
   );
 }

@@ -1,10 +1,10 @@
 import React from "react";
 
-function PlayButton(props) {
+function PlayButton({isPlaying, handleClick}) {
   return (
     <button
-      className={"play-button " + (props.isPlaying ? "play-button__pause" : "play-button__play")}
-      onClick={props.handleClick}
+      className={"play-button " + (isPlaying ? "play-button__pause" : "play-button__play")}
+      onClick={handleClick}
     ></button>
   );
 }
