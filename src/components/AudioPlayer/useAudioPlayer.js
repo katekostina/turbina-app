@@ -1,50 +1,49 @@
-// import { useState, useEffect } from "react";
-// // Этот файл позаимствован из другого плеера. Этот файл касается логики работы
-// // самого плеера, нужно дорабатывать
-// function useAudioPlayer() {
-//   const [duration, setDuration] = useState();
-//   const [curTime, setCurTime] = useState();
-//   const [playing, setPlaying] = useState(false);
-//   const [clickedTime, setClickedTime] = useState();
+import { useState, useEffect } from "react";
 
-//   useEffect(() => {
-//     const audio = document.getElementById("audio");
+function useAudioPlayer() {
+  const [duration, setDuration] = useState();
+  const [curTime, setCurTime] = useState();
+  const [playing, setPlaying] = useState(false);
+  const [clickedTime, setClickedTime] = useState();
 
-//     // state setters wrappers
-//     const setAudioData = () => {
-//       setDuration(audio.duration);
-//       setCurTime(audio.currentTime);
-//     }
+  useEffect(() => {
+    const audio = document.getElementById("audio");
 
-//     const setAudioTime = () => setCurTime(audio.currentTime);
+    // state setters wrappers
+    const setAudioData = () => {
+      setDuration(audio.duration);
+      setCurTime(audio.currentTime);
+    }
 
-//     // DOM listeners: update React state on DOM events
-//     audio.addEventListener("loadeddata", setAudioData);
+    const setAudioTime = () => setCurTime(audio.currentTime);
 
-//     audio.addEventListener("timeupdate", setAudioTime);
+    // DOM listeners: update React state on DOM events
+    audio.addEventListener("loadeddata", setAudioData);
 
-//     // React state listeners: update DOM on React state changes
-//     playing ? audio.play() : audio.pause();
+    audio.addEventListener("timeupdate", setAudioTime);
 
-//     if (clickedTime && clickedTime !== curTime) {
-//       audio.currentTime = clickedTime;
-//       setClickedTime(null);
-//     }
+    // React state listeners: update DOM on React state changes
+    playing ? audio.play() : audio.pause();
 
-//     // effect cleanup
-//     return () => {
-//       audio.removeEventListener("loadeddata", setAudioData);
-//       audio.removeEventListener("timeupdate", setAudioTime);
-//     }
-//   });
+    if (clickedTime && clickedTime !== curTime) {
+      audio.currentTime = clickedTime;
+      setClickedTime(null);
+    }
 
-//   return {
-//     curTime,
-//     duration,
-//     playing,
-//     setPlaying,
-//     setClickedTime
-//   }
-// }
+    // effect cleanup
+    return () => {
+      audio.removeEventListener("loadeddata", setAudioData);
+      audio.removeEventListener("timeupdate", setAudioTime);
+    }
+  });
 
-// export default useAudioPlayer;
+  return {
+    curTime,
+    duration,
+    playing,
+    setPlaying,
+    setClickedTime
+  }
+}
+
+export default useAudioPlayer;
