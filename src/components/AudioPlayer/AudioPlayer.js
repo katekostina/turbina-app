@@ -5,20 +5,18 @@ import Playlist from "./Playlist";
 import SwitchButton from "./SwitchButton";
 import ExpanderButton from "./ExpanderButton";
 import { songs } from "../../utils/songs.js";
-
+import useAudioPlayer from "./useAudioPlayer"
+import song from "./1.mp3"
 // import useAudioPlayer from './useAudioPlayer';
 
 function AudioPlayer() {
-  const [playing, setPlaying] = useState(false);
+
   const [expandedBox, setExpandedBox] = useState(false);
   const [lyricsShown, setLyricsShown] = useState(songs.length < 2);
-
-
-
+  const { curTime, duration, playing, setPlaying, setClickedTime } = useAudioPlayer();
   function toggleExpandedBox() {
     setExpandedBox(!expandedBox);
   }
-
   function toggleLyricsShown() {
     setLyricsShown(!lyricsShown);
   }
@@ -26,10 +24,9 @@ function AudioPlayer() {
   return (
     <div className={"audioplayer " + (expandedBox ? "audioplayer_expanded" : "audioplayer_collapsed")}>
       <audio id="audio">
-        <source src={songs[0].url} />
+        <source src={song}  type="audio/mp3"/>
         Your browser does not support the <code>audio</code> element.
       </audio>
-
       <PlayButton handleClick={() => setPlaying(!playing)} isPlaying={playing} />
 
       <Song songTitle={songs[0].title} songTime="2:24" />
