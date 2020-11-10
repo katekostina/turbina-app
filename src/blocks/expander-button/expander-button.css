@@ -1,18 +1,13 @@
-@import url('./_type/expander-button_type-arrow.css');
-@import url('./_type/expander-button_type-cross.css');
-
 .expander-button {
   box-sizing: border-box;
-  width: 32px;
-  height: 28px;
+  width: 24px;
+  height: 24px;
   background-color: transparent;
-  background-repeat: no-repeat;
   border: 0;
   cursor: pointer;
   grid-area: expander-button;
   transition: opacity .1s linear .1s;
   padding: 0;
-  background-size: contain;
   margin-left: 20px;
 }
 
@@ -22,13 +17,6 @@
 
 .expander-button:hover {
   opacity: 0.6;
-}
-
-@media screen and (max-width: 768px) {
-  .expander-button {
-    width: 24px;
-    height: 24px;
-  }
 }
 
 @media screen and (max-width: 600px) {

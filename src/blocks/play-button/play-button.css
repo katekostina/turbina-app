@@ -4,15 +4,12 @@
 .play-button {
   border: 0;
   background-color: transparent;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
   grid-area: play-button;
   cursor: pointer;
   box-sizing: border-box;
   transition: opacity .1s linear .1s;
-
   margin-left: 15px;
+  padding: 0;
 }
 
 .play-button:focus {

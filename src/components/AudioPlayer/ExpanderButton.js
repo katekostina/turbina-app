@@ -1,14 +1,10 @@
 import React from "react";
-
-const classNames = require('classnames');
+import ExpanderBtnCross from '../svg/ExpanderBtnCross';
+import ExpanderBtnArrow from '../svg/ExpanderBtnArrow';
 
 const ExpanderButton = ({ onClick, isExpanded }) =>
-  <button
-  className={classNames("expander-button", {
-    "expander-button_type-cross": isExpanded,
-    "expander-button_type-arrow": !isExpanded,
-  })}
-  onClick={onClick}
-  />
+  <button className="expander-button" onClick={onClick}>
+    {isExpanded ? <ExpanderBtnCross /> : <ExpanderBtnArrow />}
+  </button>
 
 export default ExpanderButton;

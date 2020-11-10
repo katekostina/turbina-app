@@ -1,7 +1,9 @@
 .streamings__open-btn_is-clicked {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
   width: 29px;
   height: 29px;
   padding: 0;
-  background: url('../../../../images/streamings-cls-btn.svg') no-repeat center;
 }
