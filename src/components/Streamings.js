@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { streamingsList } from '../utils/streamingsLinkList';
 
 function Streamings() {
-  let classNames = require('classnames');
+  const classNames = require('classnames');
 
   const [streamingsIsOpen, setStreamingsIsOpen] = useState(true);
   const [streamingsBtnIsClicked, setStreamingsBtnIsClicked] = useState(false);
@@ -18,7 +18,8 @@ function Streamings() {
       <button className={classNames('streamings__open-btn', {
         'streamings__open-btn_is-clicked': streamingsBtnIsClicked,
       })}
-              onClick={handleBtnClick}>{streamingsBtnIsClicked ? '' : 'Стриминги'}
+              onClick={handleBtnClick}>
+        {streamingsBtnIsClicked ? '' : 'Стриминги'}
       </button>
 
       <ul className={classNames('streamings__list', {
