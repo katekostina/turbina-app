@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { streamingsList } from '../utils/streamingsLinkList';
+import StreamingsOpenedBtn from './svg/StreamingsOpenedBtn';
 
 function Streamings() {
   const classNames = require('classnames');
@@ -19,7 +20,7 @@ function Streamings() {
         'streamings__open-btn_is-clicked': streamingsBtnIsClicked,
       })}
               onClick={handleBtnClick}>
-        {streamingsBtnIsClicked ? '' : 'Стриминги'}
+        {streamingsBtnIsClicked ? <StreamingsOpenedBtn /> : 'Стриминги'}
       </button>
 
       <ul className={classNames('streamings__list', {
