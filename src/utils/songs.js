@@ -1,9 +1,11 @@
+import nazare from '../mp3/nazare.mp3'
+import gosudarstvo from '../mp3/gosudarstvo.mp3'
 const songs = [
   {
     title: "Test-title",
     musician: "test-musician",
     poet: "test-poet",
-    audio: "",
+    audio: nazare,
     lyrics: `test-lyrics`,
     cover: "",
     videoUrl: ""
@@ -12,7 +14,7 @@ const songs = [
     title: "На заре",
     musician: "Монеточка",
     poet: "Альянс",
-    audio: "../mp3/nazare.mp3",
+    audio: nazare,
     lyrics: `Ровный бег моей судьбы
     Ночь, печаль и блеск души
     Лунный свет и майский дождь
@@ -28,12 +30,12 @@ const songs = [
     title: "Государство",
     musician: "Гражданская оборона",
     poet: "Егор Летов",
-    audio: "../mp3/gosudarstvo.mp3",
+    audio: gosudarstvo,
     lyrics: `Ржавый бункер - моя свобода
     Сладкий пряник засох давно
     Сапогом моего народа
     Старшина тормозит говно.
-    
+
     Запрятанный за углом
     Убитый помойным ведром
     Добровольно ушедший в подвал

@@ -3,8 +3,8 @@ import useAudioPlayer from "./useAudioPlayer"
 import moment from "moment";
 import momentDurationFormatSetup from "moment-duration-format";
 
-function Song({songTitle, songTime}) {
-  const { curTime, duration} = useAudioPlayer();
+function Song({songTitle, songTime, onClick}) {
+  const { curTime, setCurTime, duration} = useAudioPlayer();
 
   const curPercentage = (curTime - duration) * 100;
 
@@ -13,23 +13,23 @@ function Song({songTitle, songTime}) {
       .duration(duration, "seconds")
       .format("mm:ss", { trim: false });
   }
-  //   function calcClickedTime(e) {
-  //   const clickPositionInPage = e.pageX;
-  //   const bar = document.querySelector(".bar__progress");
-  //   const barStart = bar.getBoundingClientRect().left + window.scrollX;
-  //   const barWidth = bar.offsetWidth;
-  //   const clickPositionInBar = clickPositionInPage - barStart;
-  //   const timePerPixel = duration / barWidth;
-  //   return timePerPixel * clickPositionInBar;
+  
+const clickHandler = (e) => {
+const rect = e.target.getBoundingClientRect();
+const x = e.clientX - rect.left
+const timeToGo  = x / rect.width * 100;
+onClick(timeToGo)
+  }
   // }
   return (
     <div className="song">
-      <div className="song__container">
+      <div className="song__container" >
         <span className="song__title">{songTitle}</span>
         <span className="song__timer" curTime={curTime} duration={duration}>{formatDuration(duration - curTime)}</span>
       </div>
-      <div className="song__progress-bar">
-        <div className="song__progress-knob" />
+      <div className="song__progress-bar" onClick={clickHandler}>
+        <div className="song__progress-knob"
+        style={{width: `${curTime / duration * 100}%`}}/>
       </div>
     </div>
   );

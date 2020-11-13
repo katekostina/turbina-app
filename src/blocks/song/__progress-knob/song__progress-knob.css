@@ -1,8 +1,10 @@
 .song__progress-knob {
-    position: relative;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
     box-sizing: border-box;
     height: 3px;
-    width: 95px;
     border-bottom: 3px solid #fff;
     z-index: 1;
 }
