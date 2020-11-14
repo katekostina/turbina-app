@@ -3,9 +3,7 @@ import TextareaAutosize from "react-textarea-autosize";
 
 function Form() {
 
-
-
-const validators = {
+  const validators = {
   authorName: {
     required: (value) => { return value === '' },
     minLength: (value) => { return value && value.length < 3;
@@ -13,7 +11,7 @@ const validators = {
   },
   telephone: {
     required: (value) =>{return value === ""},
-    minLength: (value) => {return value  < 12 },
+    minLength: (value) => {return value  < 11 },
     containNumbers: (value) =>{ return !/^\d[\d\(\)\ -]{4,14}\d$/.test(value)}
   },
   email: {
@@ -34,7 +32,6 @@ const validators = {
   }
 }
 const [errors, setErrors] = useState({
-
   authorName: {
     required: true,
     minLength: true,
@@ -88,7 +85,6 @@ console.log(authorTelephoneValidationResult)
 
   const authorPoemValidationResult = Object.keys(validators.poem)
   .map((errorKey) =>{
-    console.log(errorKey)
     const errorResult = validators.poem[errorKey](poem)
     return {[errorKey]: errorResult }
   }).reduce((acc, el) => ({ ...acc, ...el}), {})
@@ -103,7 +99,6 @@ console.log(authorTelephoneValidationResult)
 
   const handleInputChange = useCallback((e) =>{
     const {name, value} = e.target;
-    console.log('hello')
     setFormValues(prevState => ({...prevState, [name]:value}))
 }, [setFormValues])
 
@@ -113,7 +108,13 @@ console.log(authorTelephoneValidationResult)
   const isEmailInvalid = Object.values(errors.email).some(Boolean)
   const isPoemInvalid = Object.values(errors.poem).some(Boolean)
    const isSubmitDisabled = isUserNameInvalid  || isPoemInvalid || isEmailInvalid || isTelephoneInvalid;
-  return (
+
+  function onSubmit(e){
+    e.preventDefault()
+    // Здесь будет логика отправления инфы на сервер.
+  }
+
+   return (
     <form className="form" name="poem-form">
       <h2 className="form__heading">Форма</h2>
       <p className="form__caption">
@@ -165,7 +166,7 @@ console.log(authorTelephoneValidationResult)
         required
       />
       {errors.poem.required   && <span className="form__error-text">Поле обязательно к заполнению</span>}
-      {errors.poem.minLength   && <span className="form__error-text">Поле обязательно к заполнению</span>}
+      {errors.poem.minLength   && <span className="form__error-text">Слишком короткое сообщение</span>}
       <div className="form__checkbox-container">
         <input
           className="form__checkbox"
@@ -182,7 +183,7 @@ console.log(authorTelephoneValidationResult)
         </label>
       </div>
 
-      <button disabled={isSubmitDisabled} className="form__submit" type="submit" name="">
+      <button onClick={onSubmit} disabled={isSubmitDisabled} className="form__submit" type="submit" name="">
         Отправить форму
       </button>
       <span className="form__error-text" />
