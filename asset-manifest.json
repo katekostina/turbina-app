@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.669e5686.chunk.css",
+    "main.js": "/static/js/main.e7094951.chunk.js",
+    "main.js.map": "/static/js/main.e7094951.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.bf229b7e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.bf229b7e.js.map",
+    "static/js/2.7eb19baf.chunk.js": "/static/js/2.7eb19baf.chunk.js",
+    "static/js/2.7eb19baf.chunk.js.map": "/static/js/2.7eb19baf.chunk.js.map",
+    "static/js/3.12aca518.chunk.js": "/static/js/3.12aca518.chunk.js",
+    "static/js/3.12aca518.chunk.js.map": "/static/js/3.12aca518.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.669e5686.chunk.css.map": "/static/css/main.669e5686.chunk.css.map",
+    "static/js/2.7eb19baf.chunk.js.LICENSE.txt": "/static/js/2.7eb19baf.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/turbina.ac1ad1fa.png",
+    "static/media/gosudarstvo.ecf55fdf.mp3": "/static/media/gosudarstvo.ecf55fdf.mp3",
+    "static/media/nazare.58888316.mp3": "/static/media/nazare.58888316.mp3"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bf229b7e.js",
+    "static/js/2.7eb19baf.chunk.js",
+    "static/css/main.669e5686.chunk.css",
+    "static/js/main.e7094951.chunk.js"
+  ]
+}
