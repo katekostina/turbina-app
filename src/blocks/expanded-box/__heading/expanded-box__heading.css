@@ -15,7 +15,7 @@
     }
 }
 
-@media screen and (min-width: 1280) {
+@media screen and (min-width: 1280px) {
     .expanded-box__heading {
         font-size: 20px;
         line-height: 25px;

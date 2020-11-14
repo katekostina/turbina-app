@@ -2,21 +2,13 @@ import nazare from '../mp3/nazare.mp3'
 import gosudarstvo from '../mp3/gosudarstvo.mp3'
 const songs = [
   {
-    title: "Test-title",
-    musician: "test-musician",
-    id: '1',
-    poet: "test-poet",
-    audio: nazare,
-    lyrics: `test-lyrics`,
-    cover: "",
-    videoUrl: ""
-  },
-  {
+    id: "0",
     title: "На заре",
     musician: "Монеточка",
-    id: '2',
     poet: "Альянс",
     audio: nazare,
+    cover: "../images/cover.png",
+    videoUrl: "https://youtu.be/BvJle-E_4JI",
     lyrics: `Ровный бег моей судьбы
     Ночь, печаль и блеск души
     Лунный свет и майский дождь
@@ -24,16 +16,16 @@ const songs = [
     Долгий век моей звезды
     Сонный блеск земной росы
     Громкий смех и райский мед
-    В небесах`,
-    cover: "../images/cover.png",
-    videoUrl: "https://youtu.be/BvJle-E_4JI"
+    В небесах`
   },
   {
+    id: "1",
     title: "Государство",
     musician: "Гражданская оборона",
-    id: '3',
     poet: "Егор Летов",
     audio: gosudarstvo,
+    cover: "../images/cover.png",
+    videoUrl: "",
     lyrics: `Ржавый бункер - моя свобода
     Сладкий пряник засох давно
     Сапогом моего народа
@@ -42,19 +34,7 @@ const songs = [
     Запрятанный за углом
     Убитый помойным ведром
     Добровольно ушедший в подвал
-    Заранее обреченный на полнейший провал`,
-    cover: "../images/cover.png",
-    videoUrl: ""
-  },
-  {
-    title: "",
-    musician: "",
-    id: '4',
-    poet: "",
-    audio: "",
-    lyrics: ``,
-    cover: "",
-    videoUrl: ""
+    Заранее обреченный на полнейший провал`
   }
 ];
 

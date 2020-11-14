@@ -1,0 +1,22 @@
+.playlist__feat {
+  font-family: "Inter", "Helvetica", sans-serif;
+  color: #fff;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+@media screen and (min-width: 768px) {
+  .playlist__feat {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .playlist__feat {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
