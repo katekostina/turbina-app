@@ -1,7 +1,6 @@
 .form__error-text {
-    visibility: hidden;
     max-width: 100%;
-
+    display: inline-block;
     color: #f00;
     font-family: 'Inter', 'Helvetica', 'Arial', sans-serif;
     font-style: normal;
