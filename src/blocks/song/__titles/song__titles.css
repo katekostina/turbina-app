@@ -1,0 +1,20 @@
+.song__titles {
+    display: inline-block;
+    width: 620px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+    .song__titles {
+      width: 567px;
+    }
+  }
+  
+  @media screen and (max-width: 320px) {
+    .song__titles {
+      width: 192px;
+    }
+  }
+  

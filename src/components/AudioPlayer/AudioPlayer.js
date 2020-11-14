@@ -15,6 +15,7 @@ function AudioPlayer() {
   const [duration, setDuration] = useState();
   const [curTime, setCurTime] = useState();
   const [playing, setPlaying] = useState(false);
+  const [currentSong, setCurrentSong] = useState(songs[0]);
 
   useEffect(() => {
     const audio = document.getElementById("audio");
@@ -38,6 +39,10 @@ function AudioPlayer() {
     setLyricsShown(!lyricsShown);
   }
 
+  function changeCurrentSong(song) {
+    setCurrentSong(song);
+  }
+
   return (
     <div className={classNames("audioplayer", {
       "audioplayer_expanded": expandedBox,
@@ -46,13 +51,15 @@ function AudioPlayer() {
       <audio id="audio"
       ref={myPlayer}
     >
-        <source src={songs[0].audio}  type="audio/mp3"/>
+        <source src={currentSong.audio}  type="audio/mp3"/>
         Your browser does not support the <code>audio</code> element.
       </audio>
       <PlayButton handleClick={() => setPlaying(!playing)} isPlaying={playing} />
 
       <Song
-      songTitle={songs[0].title}
+      title={currentSong.title}
+      musician={currentSong.musician}
+      poet={currentSong.poet}
       duration={duration}
       curTime={curTime}
        onClick={curTime => {
@@ -77,7 +84,7 @@ function AudioPlayer() {
           {lyricsShown && (
             <p className="expanded-box__text">{songs[0].lyrics}</p>
           )}
-          {!lyricsShown && <Playlist songs={songs} changeCurSong={}/>}
+          {!lyricsShown && <Playlist songs={songs} changeCurSong={changeCurrentSong}/>}
 
         </div>
 
