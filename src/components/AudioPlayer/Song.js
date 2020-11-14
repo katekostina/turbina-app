@@ -3,7 +3,6 @@ import moment from "moment";
 import momentDurationFormatSetup from "moment-duration-format";
 
 function Song({ title, musician, poet, songTime, onClick, curTime, duration }) {
-  const curPercentage = (curTime - duration) * 100;
 
   function formatDuration(duration) {
     return moment
@@ -14,10 +13,11 @@ function Song({ title, musician, poet, songTime, onClick, curTime, duration }) {
   const clickHandler = (e) => {
     const rect = e.target.getBoundingClientRect();
     const x = e.clientX - rect.left;
-    const timeToGo = (x / rect.width) * 100;
-    onClick(timeToGo);
-  };
-  
+    const percentage = x / rect.width * 100;
+    const timeToGo  = duration / 100 * percentage;
+    onClick(timeToGo)
+  }
+
   return (
     <div className="song">
       <div className="song__container">
