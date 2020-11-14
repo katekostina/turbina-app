@@ -141,7 +141,7 @@ console.log(authorTelephoneValidationResult)
         required
       />
       {errors.telephone.required   && <span className="form__error-text">Поле обязательно к заполнению</span>}
-      {errors.telephone.minLength && <span className="form__error-text">Номер телефона должен состоять из 14 цифр</span>}
+      {errors.telephone.minLength && <span className="form__error-text">Номер телефона должен состоять из 11 цифр</span>}
       {errors.telephone.containNumbers  && <span className="form__error-text">Введите номер телефона</span>}
       <input
         className="form__input"
