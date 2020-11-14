@@ -1,7 +1,118 @@
-import React from "react";
+import React, {useEffect, useState, useCallback} from "react";
 import TextareaAutosize from "react-textarea-autosize";
 
 function Form() {
+
+
+
+const validators = {
+  authorName: {
+    required: (value) => { return value === '' },
+    minLength: (value) => { return value && value.length < 3;
+  },
+  },
+  telephone: {
+    required: (value) =>{return value === ""},
+    minLength: (value) => {return value  < 12 },
+    containNumbers: (value) =>{ return !/^\d[\d\(\)\ -]{4,14}\d$/.test(value)}
+  },
+  email: {
+    required: (value) =>{
+      return value === ""
+    },
+    minLength: (value) => {
+      return value.length < 3
+    },
+  },
+  poem: {
+    required: (value) =>{
+      return value === ""
+    },
+    minLength: (value) => {
+      return value.length < 5
+    },
+  }
+}
+const [errors, setErrors] = useState({
+
+  authorName: {
+    required: true,
+    minLength: true,
+  },
+  telephone: {
+    required: true,
+    minLength: true,
+    containNumbers: true
+  },
+  email: {
+    required: true,
+    minLength: true,
+  },
+  poem: {
+    required: true,
+    minLength: true
+  }
+  })
+
+const [formValues, setFormValues] = React.useState({
+    authorName: '',
+    telephone: '',
+    email: '',
+    poem: '',
+})
+
+  useEffect(
+  function validateInputs(){
+  const {authorName, telephone, email, poem} = formValues
+
+  const authorNameValidationResult = Object.keys(validators.authorName)
+  .map((errorKey) =>{
+    const errorResult = validators.authorName[errorKey](authorName)
+
+    return {[errorKey]: errorResult }
+
+  }).reduce((acc, el) => ({ ...acc, ...el}), {})
+console.log(authorNameValidationResult)
+
+  const authorTelephoneValidationResult = Object.keys(validators.telephone)
+  .map((errorKey) =>{
+    const errorResult = validators.telephone[errorKey](telephone)
+    return {[errorKey] : errorResult }
+  }).reduce((acc, el) => ({ ...acc, ...el}), {})
+console.log(authorTelephoneValidationResult)
+  const authorEmailValidationResult = Object.keys(validators.email)
+  .map((errorKey) =>{
+    const errorResult = validators.email[errorKey](email)
+    return {[errorKey]: errorResult }
+  }).reduce((acc, el) => ({ ...acc, ...el}), {})
+
+  const authorPoemValidationResult = Object.keys(validators.poem)
+  .map((errorKey) =>{
+    console.log(errorKey)
+    const errorResult = validators.poem[errorKey](poem)
+    return {[errorKey]: errorResult }
+  }).reduce((acc, el) => ({ ...acc, ...el}), {})
+
+  setErrors({
+    authorName: authorNameValidationResult,
+    telephone: authorTelephoneValidationResult,
+    email: authorEmailValidationResult,
+    poem: authorPoemValidationResult
+  })
+}, [formValues, setErrors])
+
+  const handleInputChange = useCallback((e) =>{
+    const {name, value} = e.target;
+    console.log('hello')
+    setFormValues(prevState => ({...prevState, [name]:value}))
+}, [setFormValues])
+
+  const {authorName, telephone, email, poem} = formValues
+  const isUserNameInvalid = Object.values(errors.authorName).some(Boolean)
+  const isTelephoneInvalid = Object.values(errors.telephone).some(Boolean)
+  const isEmailInvalid = Object.values(errors.email).some(Boolean)
+  const isPoemInvalid = Object.values(errors.poem).some(Boolean)
+   const isSubmitDisabled = isUserNameInvalid  || isPoemInvalid || isEmailInvalid || isTelephoneInvalid;
   return (
     <form className="form" name="poem-form">
       <h2 className="form__heading">Форма</h2>
@@ -10,43 +121,51 @@ function Form() {
       </p>
       <input
         className="form__input"
+        onChange={handleInputChange}
+        value={authorName}
         type="text"
-        name="author-name"
+        name="authorName"
+        required
         placeholder="Имя и фамилия автора"
-        minLength="2"
-        required
       />
-      <span className="form__error-text" />
-
+       {errors.authorName.required  && <span className="form__error-text">Поле обязательно к заполнению</span>}
+       {errors.authorName.minLength && <span className="form__error-text">Введите больше символов</span>}
       <input
         className="form__input"
-        type="tel"
+        onChange={handleInputChange}
+        value={telephone}
         name="telephone"
+        type="tel"
         placeholder="Телефон"
-        minLength="10"
         required
       />
-      <span className="form__error-text" />
-
+      {errors.telephone.required   && <span className="form__error-text">Поле обязательно к заполнению</span>}
+      {errors.telephone.minLength && <span className="form__error-text">Номер телефона должен состоять из 14 цифр</span>}
+      {errors.telephone.containNumbers  && <span className="form__error-text">Введите номер телефона</span>}
       <input
         className="form__input"
+        onChange={handleInputChange}
+        value={email}
         type="email"
         name="email"
         placeholder="Почта"
-        minLength="3"
         required
       />
-      <span className="form__error-text" />
+      {errors.email.required   && <span className="form__error-text">Поле обязательно к заполнению</span>}
+      {errors.email.minLength && <span className="form__error-text">Минимальная длина - 3 символа</span>}
+      <span className="form__error-text"/>
 
       <TextareaAutosize
         className="form__textarea"
+        value={poem}
+        onChange={handleInputChange}
         name="poem"
         placeholder="Стихи"
         minLength="2"
         required
       />
-      <span className="form__error-text" />
-
+      {errors.poem.required   && <span className="form__error-text">Поле обязательно к заполнению</span>}
+      {errors.poem.minLength   && <span className="form__error-text">Поле обязательно к заполнению</span>}
       <div className="form__checkbox-container">
         <input
           className="form__checkbox"
@@ -63,7 +182,7 @@ function Form() {
         </label>
       </div>
 
-      <button className="form__submit" type="submit" name="">
+      <button disabled={isSubmitDisabled} className="form__submit" type="submit" name="">
         Отправить форму
       </button>
       <span className="form__error-text" />
