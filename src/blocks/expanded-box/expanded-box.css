@@ -22,6 +22,12 @@
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .expanded-box {
+    height: 104px;
+  }
+}
+
 /* styling scrollbar for chrome and safari */
 .expanded-box::-webkit-scrollbar-track {
   border-radius: 3px;

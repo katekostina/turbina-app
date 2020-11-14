@@ -1,27 +1,24 @@
-import React from 'react';
+import React from "react";
 
-function Playlist() {
-
-    return(
-        <ul className="playlist">
-            <li >№6 Поезия — Мукулатура feat. Саша Петров</li>
-            <li>№5 Лодка — СБПЧ feat. Маруся Романова</li>
-            <li>№4 Кирпичи — Инди группа feat. Пётр Сковородников</li>
-            <li>№7 Контур — Хадн Дадн feat. Варя Карпова и Федя Быстров</li>
-            <li>№6 Поезия — Мукулатура feat. Саша Петров</li>
-            <li>№5 Лодка — СБПЧ feat. Маруся Романова</li>
-            <li>№4 Кирпичи — Инди группа feat. Пётр Сковородников</li>
-            <li>№7 Контур — Хадн Дадн feat. Варя Карпова и Федя Быстров</li>
-            <li>№6 Поезия — Мукулатура feat. Саша Петров</li>
-            <li>№5 Лодка — СБПЧ feat. Маруся Романова</li>
-            <li>№4 Кирпичи — Инди группа feat. Пётр Сковородников</li>
-            <li>№7 Контур — Хадн Дадн feat. Варя Карпова и Федя Быстров</li>
-            <li>№6 Поезия — Мукулатура feat. Саша Петров</li>
-            <li>№5 Лодка — СБПЧ feat. Маруся Романова</li>
-            <li>№4 Кирпичи — Инди группа feat. Пётр Сковородников</li>
-            <li>№7 Контур — Хадн Дадн feat. Варя Карпова и Федя Быстров</li>
-        </ul>
-    );
+function Playlist({ songs, changeCurSong }) {
+  return (
+    <ul className="playlist">
+      {songs.map((song) => (
+        <li className="playlist__row" key={song.id} onClick={ () => changeCurSong(song.id) }>
+          {song.title && (
+              <span className="playlist__title">{song.title} &mdash; </span>
+          )}
+          {song.musician && (
+              <span className="playlist__title">{song.musician}</span>
+          )}
+          <span className="playlist__feat"> feat. </span>
+          {song.poet && (
+              <span className="playlist__title">{song.poet}</span>
+          )}
+        </li>
+      ))}
+    </ul>
+  );
 }
 
 export default Playlist;

@@ -1,25 +1,9 @@
+@import './__title/playlist__title.css';
+@import './__feat/playlist__feat.css';
+@import './__row/playlist__row.css';
+
 .playlist {
-  font-family: "Inter", "Helvetica", sans-serif;
-  color: #fff;
-  font-style: italic;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19px;
-  margin: 0 0 10px;
+  margin: 0;
   list-style: none;
   padding: 0;
-}
-
-@media screen and (min-width: 768px) {
-  .playlist {
-    font-size: 18px;
-    line-height: 27px;
-  }
-}
-
-@media screen and (min-width: 1280) {
-  .playlist {
-    font-size: 20px;
-    line-height: 27px;
-  }
 }

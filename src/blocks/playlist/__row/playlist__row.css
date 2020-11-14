@@ -1,0 +1,22 @@
+.playlist__row {
+    margin: 0 0 10px;
+}
+
+.playlist__row:last-of-type {
+    margin: 0 0 5px;
+}
+
+.playlist__row:hover .playlist__title,  .playlist__row:hover .playlist__feat {
+    cursor: pointer;
+    font-style: italic;
+}
+
+@media screen and (min-width: 1024px) {
+    .playlist__row {
+        margin: 0 0 16px;
+    }
+
+    .playlist__row:last-of-type {
+        margin: 0 0 8px;
+    }
+}

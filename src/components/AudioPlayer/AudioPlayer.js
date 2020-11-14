@@ -77,7 +77,7 @@ function AudioPlayer() {
           {lyricsShown && (
             <p className="expanded-box__text">{songs[0].lyrics}</p>
           )}
-          {!lyricsShown && <Playlist />}
+          {!lyricsShown && <Playlist songs={songs} changeCurSong={}/>}
 
         </div>
 

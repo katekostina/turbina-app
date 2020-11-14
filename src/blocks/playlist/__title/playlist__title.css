@@ -1,0 +1,26 @@
+.playlist__title {
+  font-family: "Inter", "Helvetica", sans-serif;
+  color: #fff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+@media screen and (min-width: 768px) {
+  .playlist__title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .playlist__title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+
+
+
