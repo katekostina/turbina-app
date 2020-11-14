@@ -4,6 +4,7 @@ const songs = [
   {
     title: "Test-title",
     musician: "test-musician",
+    id: '1',
     poet: "test-poet",
     audio: nazare,
     lyrics: `test-lyrics`,
@@ -13,6 +14,7 @@ const songs = [
   {
     title: "На заре",
     musician: "Монеточка",
+    id: '2',
     poet: "Альянс",
     audio: nazare,
     lyrics: `Ровный бег моей судьбы
@@ -29,6 +31,7 @@ const songs = [
   {
     title: "Государство",
     musician: "Гражданская оборона",
+    id: '3',
     poet: "Егор Летов",
     audio: gosudarstvo,
     lyrics: `Ржавый бункер - моя свобода
@@ -46,6 +49,7 @@ const songs = [
   {
     title: "",
     musician: "",
+    id: '4',
     poet: "",
     audio: "",
     lyrics: ``,

@@ -1,19 +1,17 @@
 import React from "react";
-import useAudioPlayer from "./useAudioPlayer"
 import moment from "moment";
 import momentDurationFormatSetup from "moment-duration-format";
 
-function Song({songTitle, songTime, onClick}) {
-  const { curTime, setCurTime, duration} = useAudioPlayer();
+function Song({songTitle, songTime, onClick, curTime, duration}) {
 
   const curPercentage = (curTime - duration) * 100;
 
-  function formatDuration(duration) {
-    return moment
-      .duration(duration, "seconds")
-      .format("mm:ss", { trim: false });
+function formatDuration(duration) {
+  return moment
+    .duration(duration, "seconds")
+    .format("mm:ss", { trim: false });
   }
-  
+
 const clickHandler = (e) => {
 const rect = e.target.getBoundingClientRect();
 const x = e.clientX - rect.left

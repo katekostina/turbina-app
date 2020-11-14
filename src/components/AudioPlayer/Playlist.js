@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Playlist() {
-    
+
     return(
         <ul className="playlist">
             <li >№6 Поезия — Мукулатура feat. Саша Петров</li>

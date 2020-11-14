@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Song from "./Song";
 import PlayButton from "./PlayButton";
 import Playlist from "./Playlist";
@@ -6,16 +6,31 @@ import SwitchButton from "./SwitchButton";
 import ExpanderButton from "./ExpanderButton";
 import { songs } from "../../utils/songs.js";
 import throttling  from "../../utils/throttling.js";
-import useAudioPlayer from "./useAudioPlayer"
 
 function AudioPlayer() {
   const classNames = require('classnames');
   const myPlayer = useRef(null)
   const [expandedBox, setExpandedBox] = useState(false);
   const [lyricsShown, setLyricsShown] = useState(songs.length < 2);
-  const { curTime, duration,setCurTime, playing, setPlaying, setClickedTime } = useAudioPlayer();
-  const {onClick} = Song
+  const [duration, setDuration] = useState();
+  const [curTime, setCurTime] = useState();
+  const [playing, setPlaying] = useState(false);
+  const [clickedTime, setClickedTime] = useState();
 
+  useEffect(() => {
+    const audio = document.getElementById("audio");
+    const setAudioData = () => {
+      setDuration(audio.duration);
+      setCurTime(audio.currentTime);
+    }
+    const setAudioTime = () => setCurTime(audio.currentTime);
+    audio.addEventListener("loadeddata", setAudioData);
+
+    audio.addEventListener("timeupdate", setAudioTime);
+
+    playing ? audio.play() : audio.pause();
+
+  });
 
   function toggleExpandedBox() {
     setExpandedBox(!expandedBox);
@@ -39,10 +54,12 @@ function AudioPlayer() {
 
       <Song
       songTitle={songs[0].title}
-      // onClick={curTime => {
-      //  myPlayer.current.currentTime = curTime
-      //  console.log(curTime)
-      //   }}
+      duration={duration}
+      curTime={curTime}
+       onClick={curTime => {
+        myPlayer.current.currentTime = curTime
+       console.log(curTime)
+        }}
       />
 
       {expandedBox && (
