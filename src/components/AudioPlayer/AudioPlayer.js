@@ -50,9 +50,10 @@ function AudioPlayer() {
     })}>
       <audio id="audio"
       ref={myPlayer}
+      src={currentSong.audio}
+      type="audio/mp3"
     >
-        <source src={currentSong.audio}  type="audio/mp3"/>
-        Your browser does not support the <code>audio</code> element.
+   Your browser does not support the <code>audio</code> element.
       </audio>
       <PlayButton handleClick={() => setPlaying(!playing)} isPlaying={playing} />
 
