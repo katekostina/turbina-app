@@ -4,7 +4,7 @@ function Playlist({ songs, changeCurSong }) {
   return (
     <ul className="playlist">
       {songs.map((song) => (
-        <li className="playlist__row" key={song.id} onClick={ () => changeCurSong(song.id) }>
+        <li className="playlist__row" key={song.id} onClick={ () => changeCurSong(song) }>
           {song.title && (
               <span className="playlist__title">{song.title} &mdash; </span>
           )}

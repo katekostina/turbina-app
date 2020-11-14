@@ -3,6 +3,7 @@
 @import url('./__progress-bar/song__progress-bar.css');
 @import url('./__progress-knob/song__progress-knob.css');
 @import url('./__container/song__container.css');
+@import url('./__titles/song__titles.css');
 
 .song {
   box-sizing: border-box;
