@@ -1,5 +1,6 @@
 import React, {useEffect, useState, useCallback} from "react";
 import TextareaAutosize from "react-textarea-autosize";
+import { offerLink } from '../utils/linksList';
 
 function Form() {
 
@@ -177,7 +178,7 @@ console.log(authorTelephoneValidationResult)
         />
         <label className="form__label" htmlFor="checkbox">
           Согласен с{" "}
-          <a className="form__link" href="#" target="_blank">
+          <a className="form__link" href={offerLink} target="_blank" rel="noreferrer">
             офертой
           </a>
         </label>
