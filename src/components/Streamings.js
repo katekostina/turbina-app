@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { streamingsList } from '../utils/streamingsLinkList';
+import { streamingsList } from '../utils/linksList';
 import StreamingsOpenedBtn from './svg/StreamingsOpenedBtn';
 
 function Streamings() {
