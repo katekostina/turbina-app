@@ -9,7 +9,7 @@ import throttling from "../../utils/throttling.js";
 
 function AudioPlayer() {
   const classNames = require("classnames");
-  const myPlayer = useRef("audio");
+  const myPlayer = useRef(null);
   const [expandedBox, setExpandedBox] = useState(false);
   const [lyricsShown, setLyricsShown] = useState(songs.length < 2);
   const [duration, setDuration] = useState();
