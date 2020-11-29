@@ -57,7 +57,7 @@ const [formValues, setFormValues] = React.useState({
     telephone: '',
     email: '',
     poem: '',
-})
+}, )
 
   useEffect(
   function validateInputs(){
@@ -66,7 +66,6 @@ const [formValues, setFormValues] = React.useState({
   const authorNameValidationResult = Object.keys(validators.authorName)
   .map((errorKey) =>{
     const errorResult = validators.authorName[errorKey](authorName)
-
     return {[errorKey]: errorResult }
 
   }).reduce((acc, el) => ({ ...acc, ...el}), {})

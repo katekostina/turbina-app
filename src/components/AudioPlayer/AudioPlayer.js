@@ -9,7 +9,7 @@ import throttling from "../../utils/throttling.js";
 
 function AudioPlayer() {
   const classNames = require("classnames");
-  const myPlayer = useRef(null);
+  const myPlayer = useRef("audio");
   const [expandedBox, setExpandedBox] = useState(false);
   const [lyricsShown, setLyricsShown] = useState(songs.length < 2);
   const [duration, setDuration] = useState();
@@ -56,7 +56,7 @@ function AudioPlayer() {
         audioplayer_collapsed: !expandedBox,
       })}
     >
-      <audio id="audio" ref={myPlayer} src={currentSong.audio} type="audio/mp3">
+      <audio id="audio" ref={myPlayer} src={currentSong.audio}>
         Your browser does not support the <code>audio</code> element.
       </audio>
       <PlayButton
