@@ -69,7 +69,6 @@ const [formValues, setFormValues] = React.useState({
     return {[errorKey]: errorResult }
 
   }).reduce((acc, el) => ({ ...acc, ...el}), {})
-console.log(authorNameValidationResult)
 
   const authorTelephoneValidationResult = Object.keys(validators.telephone)
   .map((errorKey) =>{
@@ -129,7 +128,7 @@ console.log(authorTelephoneValidationResult)
         required
         placeholder="Имя и фамилия автора"
       />
-       {errors.authorName.required  && <span className="form__error-text">Поле обязательно к заполнению</span>}
+       {!errors.authorName.required  && <span className="form__error-text">Поле обязательно к заполнению</span>}
        {errors.authorName.minLength && <span className="form__error-text">Введите больше символов</span>}
       <input
         className="form__input"
@@ -140,9 +139,9 @@ console.log(authorTelephoneValidationResult)
         placeholder="Телефон"
         required
       />
-      {errors.telephone.required   && <span className="form__error-text">Поле обязательно к заполнению</span>}
-      {errors.telephone.minLength && <span className="form__error-text">Номер телефона должен состоять из 11 цифр</span>}
-      {errors.telephone.containNumbers  && <span className="form__error-text">Введите номер телефона</span>}
+      {!errors.telephone.required   && <span className="form__error-text">Поле обязательно к заполнению</span>}
+      {!errors.telephone.minLength && <span className="form__error-text">Номер телефона должен состоять из 11 цифр</span>}
+      {!errors.telephone.containNumbers  && <span className="form__error-text">Введите номер телефона</span>}
       <input
         className="form__input"
         onChange={handleInputChange}
@@ -152,8 +151,8 @@ console.log(authorTelephoneValidationResult)
         placeholder="Почта"
         required
       />
-      {errors.email.required   && <span className="form__error-text">Поле обязательно к заполнению</span>}
-      {errors.email.minLength && <span className="form__error-text">Минимальная длина - 3 символа</span>}
+      {!errors.email.required   && <span className="form__error-text">Поле обязательно к заполнению</span>}
+      {!errors.email.minLength && <span className="form__error-text">Минимальная длина - 3 символа</span>}
       <span className="form__error-text"/>
 
       <TextareaAutosize
@@ -165,8 +164,8 @@ console.log(authorTelephoneValidationResult)
         minLength="2"
         required
       />
-      {errors.poem.required   && <span className="form__error-text">Поле обязательно к заполнению</span>}
-      {errors.poem.minLength   && <span className="form__error-text">Слишком короткое сообщение</span>}
+      {!errors.poem.required   && <span className="form__error-text">Поле обязательно к заполнению</span>}
+      {!errors.poem.minLength   && <span className="form__error-text">Слишком короткое сообщение</span>}
       <div className="form__checkbox-container">
         <input
           className="form__checkbox"
