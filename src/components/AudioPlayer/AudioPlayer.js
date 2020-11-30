@@ -18,24 +18,22 @@ function AudioPlayer() {
   const [currentSong, setCurrentSong] = useState(songs[0]);
 
   useEffect(() => {
-    const audio = document.getElementById("audio");
     const setAudioData = () => {
-      setDuration(audio.duration);
-      setCurTime(audio.currentTime);
+      setDuration(myPlayer.current.duration);
+      setCurTime(myPlayer.current.currentTime);
     };
-    const setAudioTime = () => setCurTime(audio.currentTime);
-    audio.addEventListener("loadeddata", setAudioData);
-    audio.addEventListener("timeupdate", setAudioTime);
+    const setAudioTime = () => setCurTime(myPlayer.current.currentTime);
+    myPlayer.current.addEventListener("loadeddata", setAudioData);
+    myPlayer.current.addEventListener("timeupdate", setAudioTime);
 
     return () => {
-      audio.removeEventListener("loadeddata", setAudioData);
-      audio.removeEventListener("timeupdate", setAudioTime);
+      myPlayer.current.removeEventListener("loadeddata", setAudioData);
+      myPlayer.current.removeEventListener("timeupdate", setAudioTime);
     };
   }, []);
 
   useEffect(() => {
-    const audio = document.getElementById("audio");
-    playing ? audio.play() : audio.pause();
+    playing ? myPlayer.current.play() : myPlayer.current.pause();
   });
 
   function toggleExpandedBox() {
@@ -56,7 +54,7 @@ function AudioPlayer() {
         audioplayer_collapsed: !expandedBox,
       })}
     >
-      <audio id="audio" ref={myPlayer} src={currentSong.audio} type="audio/mp3">
+      <audio ref={myPlayer} src={currentSong.audio}>
         Your browser does not support the <code>audio</code> element.
       </audio>
       <PlayButton

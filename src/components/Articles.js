@@ -3,13 +3,11 @@ import { articlesContent } from "../utils/texts.js";
 
 function Articles() {
   return (
-    <>
-      {/* Если массив с контентом статей не пустой, то рендерим содержимое */}
-      {articlesContent && (
+
+      articlesContent && (
         <div className="articles">
           {articlesContent.map((article) => (
             <article className="articles__article" key={article.id}>
-
               {/* Если есть заголовок — рендерим его */}
               {article.heading && (
                 <h2 className="articles__heading">{article.heading}</h2>
@@ -17,13 +15,11 @@ function Articles() {
 
               {/* Если есть абзацы текста, то отрендерить их  */}
               {article.paragraphs && (
-                <>
-                  {article.paragraphs.map((paragraph) => (
+                  article.paragraphs.map((paragraph) => (
                     <p className="articles__paragraph" key={paragraph.id}>
                       {paragraph.text}
                     </p>
-                  ))}
-                </>
+                  ))
               )}
 
               {/* Если есть список, то отрендерить его */}
@@ -39,9 +35,10 @@ function Articles() {
             </article>
           ))}
         </div>
-      )}
-    </>
+      )
+
   );
 }
 
 export default Articles;
+
