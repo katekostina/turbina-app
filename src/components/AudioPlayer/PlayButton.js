@@ -3,8 +3,10 @@ import PauseBtn from '../svg/PauseBtn';
 import PlayBtn from '../svg/PlayBtn';
 
 const classNames = require('classnames');
+function PlayButton({ isPlaying, handleClick } )  {
 
-const PlayButton = ({ isPlaying, handleClick } )  =>
+
+  return(
   <button
   className={classNames("play-button", {
     "play-button__pause": isPlaying,
@@ -13,5 +15,6 @@ const PlayButton = ({ isPlaying, handleClick } )  =>
   onClick={handleClick}
   > {isPlaying ? <PauseBtn /> : <PlayBtn />}
   </button>
-
+)
+}
 export default PlayButton;

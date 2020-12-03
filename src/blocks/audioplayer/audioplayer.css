@@ -1,6 +1,7 @@
 @import './_expanded/audioplayer_expanded.css';
 @import './_collapsed/audioplayer_collapsed.css';
 
+
 .audioplayer {
   min-width: 290px;
   max-width: 1280px;
@@ -15,5 +16,5 @@
 expanded-box  - grid-area: expanded-box,
 expander-button - grid-area: expander-button,
 play-button - grid-area: play-button,
-switch-button - grid-area: swithc-button 
+switch-button - grid-area: swithc-button
 */
