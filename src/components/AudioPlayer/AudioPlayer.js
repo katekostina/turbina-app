@@ -48,12 +48,18 @@ function AudioPlayer() {
   }
 
   return (
+    <>
     <div
       className={classNames("audioplayer", {
         audioplayer_expanded: expandedBox,
         audioplayer_collapsed: !expandedBox,
       })}
     >
+      {expandedBox && (
+      currentSong.audio ?
+      <img className="album" src={currentSong.cover}></img> : null)}
+
+
       <audio ref={myPlayer} src={currentSong.audio}>
         Your browser does not support the <code>audio</code> element.
       </audio>
@@ -74,7 +80,10 @@ function AudioPlayer() {
       />
 
       {expandedBox && (
+        <>
         <SwitchButton lyricsShown={lyricsShown} onClick={toggleLyricsShown} />
+      <button className="switch-button_link">Клип</button>
+      </>
       )}
 
       <ExpanderButton onClick={toggleExpandedBox} isExpanded={expandedBox} />
@@ -93,6 +102,7 @@ function AudioPlayer() {
         </div>
       )}
     </div>
+    </>
   );
 }
 

@@ -1,6 +1,7 @@
 import nazare from '../mp3/nazare.mp3'
 import gosudarstvo from '../mp3/gosudarstvo.mp3'
-
+import Letov from '../images/Letov.jpg'
+import Monetochka from '../images/Monetochka.jpg'
 const songs = [
   {
     id: "0",
@@ -8,7 +9,7 @@ const songs = [
     musician: "Монеточка",
     poet: "Альянс",
     audio: nazare,
-    cover: "../images/cover.png",
+    cover: Monetochka,
     videoUrl: "https://youtu.be/BvJle-E_4JI",
     lyrics: `Ровный бег моей судьбы
     Ночь, печаль и блеск души
@@ -25,7 +26,7 @@ const songs = [
     musician: "Гражданская оборона",
     poet: "Егор Летов",
     audio: gosudarstvo,
-    cover: "../images/cover.png",
+    cover: Letov,
     videoUrl: "",
     lyrics: `Ржавый бункер - моя свобода
     Сладкий пряник засох давно

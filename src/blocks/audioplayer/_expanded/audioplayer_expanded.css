@@ -12,10 +12,10 @@
 @media screen and (min-width: 768px) {
     .audioplayer_expanded {
         display: grid;
-        grid-template-columns: 60px 1fr 145px 69px;
+        grid-template-columns: 176px 50px 1fr   60px;
         grid-template-rows: 37px 152px;
-         grid-template-areas: "play-button song switch-button expander-button"
-                             ". expanded-box expanded-box .";
+         grid-template-areas: "album play-button song song switch-button-link switch-button   expander-button"
+
     }
 }
 
