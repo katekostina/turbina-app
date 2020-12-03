@@ -5,7 +5,6 @@ import Playlist from "./Playlist";
 import SwitchButton from "./SwitchButton";
 import ExpanderButton from "./ExpanderButton";
 import { songs } from "../../utils/songs.js";
-import throttling from "../../utils/throttling.js";
 
 function AudioPlayer() {
   const classNames = require("classnames");
@@ -60,7 +59,10 @@ function AudioPlayer() {
       <img className="album" src={currentSong.cover}></img> : null)}
 
 
-      <audio ref={myPlayer} src={currentSong.audio}>
+      <audio
+      ref={myPlayer}
+      src={currentSong.audio}
+      >
         Your browser does not support the <code>audio</code> element.
       </audio>
       <PlayButton
@@ -82,7 +84,8 @@ function AudioPlayer() {
       {expandedBox && (
         <>
         <SwitchButton lyricsShown={lyricsShown} onClick={toggleLyricsShown} />
-      <button className="switch-button_link">Клип</button>
+        {currentSong.videoUrl ? <a className="switch-button_link" href={currentSong.videoUrl}>Клип</a>
+        : <button className="switch-button_link_blocked">Клипа нет</button>}
       </>
       )}
 
