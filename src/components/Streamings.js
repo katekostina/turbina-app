@@ -27,11 +27,11 @@ function Streamings() {
         'streamings__list_type_mobile': !streamingsIsOpen,
       })}>
 
-        {streamingsList.map((link) => {
+        {streamingsList.map(({id, link, name}) => {
           return (
-            <li className="streamings__list-item" key={link.id}>
-            <a className="streamings__link" rel="noreferrer" href={link.link} target="_blank">
-              {link.name} &#8599;</a>
+            <li className="streamings__list-item" key={id}>
+            <a className="streamings__link" rel="noreferrer" href={link} target="_blank">
+              {name} &#8599;</a>
           </li>
           );
         })}
