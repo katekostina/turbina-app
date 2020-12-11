@@ -1,14 +1,15 @@
 .expander-button {
+  grid-area: expander-button;
   box-sizing: border-box;
-  width: 24px;
-  height: 24px;
   background-color: transparent;
   border: 0;
   cursor: pointer;
-  grid-area: expander-button;
   transition: opacity .1s linear .1s;
   padding: 0;
-  margin-left: 20px;
+
+  width: 16px;
+  height: 16px;
+  margin-left: 11px;
 }
 
 .expander-button:focus {
@@ -19,10 +20,10 @@
   opacity: 0.6;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 768px) {
   .expander-button {
-    width: 16px;
-    height: 16px;
-    margin-left: 11px;
+    width: 24px;
+    height: 24px;
+    margin-left: 20px;
   }
 }

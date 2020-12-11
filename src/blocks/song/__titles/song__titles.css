@@ -1,6 +1,7 @@
 .song__titles {
     display: inline-block;
     width: 620px;
+    color: #fff;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;

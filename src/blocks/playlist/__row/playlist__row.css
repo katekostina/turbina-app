@@ -3,7 +3,7 @@
 }
 
 .playlist__row:last-of-type {
-    margin: 0 0 5px;
+    margin: 0;
 }
 
 .playlist__row:hover .playlist__title,  .playlist__row:hover .playlist__feat {
