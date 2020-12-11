@@ -1,56 +1,59 @@
-.switch-button {
-  grid-area: switch-button;
-  padding: 2px;
+.video-button {
+  grid-area: video-button;
+  padding: 4px;
   border: 2px solid #fff;
   border-radius: 30px;
-  background-color: transparent;
+  background-color: #fff;
   transition: opacity 0.1s linear 0.05s;
   cursor: pointer;
   box-sizing: border-box;
 
   font-family: 'Inter', 'Helvetica', 'Arial', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
+  text-decoration: none;
   font-style: normal;
-  color: #fff;
+  color: #000;
   font-size: 12px;
   line-height: 15px;
   white-space: nowrap;
   text-align: center;
+  vertical-align: middle;
 
   height: 31px;
-  min-width: 125px;
-  width: 100%;
+  width: 74px;
 
   margin-top: 20px;
   margin-bottom: 30px;
+  margin-right: 5px;
 }
 
-.switch-button:hover {
+.video-button:hover {
   opacity: 0.6;
   font-style: italic;
 }
 
-.switch-button:focus {
+.video-button:focus {
   outline: none;
 }
 
 @media screen and (min-width: 768px) {
-  .switch-button {
+  .video-button {
     font-size: 15px;
     line-height: 19px;
     height: 34px;
-    width: 125px;
+    width: 87px;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 10px;
+    margin-right: 0px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .switch-button {
+  .video-button {
     font-size: 16px;
     line-height: 20px;
     height: 35px;
-    width: 135px;
+    width: 94px;
   }
 }

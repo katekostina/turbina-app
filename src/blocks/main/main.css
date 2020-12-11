@@ -1,7 +1,7 @@
-@import url('./__header/main__header.css');
-@import url('./__logo/main__logo.css');
-@import url('./__logo-link/main__logo-link.css');
-@import url('./__name/main__name.css');
+@import url("./__header/main__header.css");
+@import url("./__logo/main__logo.css");
+@import url("./__logo-link/main__logo-link.css");
+@import url("./__name/main__name.css");
 
 .main {
   width: 100%;
@@ -11,34 +11,29 @@
 }
 
 @media screen and (max-width: 350px) {
-  .main{
-  max-width: 300px;
-}
-
+  .main {
+    max-width: 300px;
+  }
 }
 @media screen and (max-width: 410px) {
-  .main{
-  max-width: 410px;
-}
-
+  .main {
+    max-width: 410px;
+  }
 }
 @media screen and (max-width: 600px) {
-  .main{
-  max-width: 600px;
-}
-
+  .main {
+    max-width: 600px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-  .main{
-  max-width: 768px;
-}
-
+  .main {
+    max-width: 768px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
-  .main{
-  max-width: 1024px;
-}
-
+  .main {
+    max-width: 1024px;
+  }
 }

@@ -2,18 +2,20 @@
 @import url('./fonts/Inter/inter.css');
 @import url('./blocks/page/page.css');
 @import url('./blocks/body/body.css');
-@import url('./blocks/album/album.css');
 @import url('./blocks/main/main.css');
 @import url('./blocks/streamings/streamings.css');
 @import url('./blocks/content-box/content-box.css');
 @import url('./blocks/articles/articles.css');
 @import url('./blocks/form/form.css');
-@import url('./blocks/footer/footer.css');
+
 @import url('./blocks/audioplayer/audioplayer.css');
+@import url('./blocks/expanded-box/expanded-box.css');
+@import url('./blocks/playlist/playlist.css');
 @import url('./blocks/song/song.css');
+@import url('./blocks/cover/cover.css');
 @import url('./blocks/expander-button/expander-button.css');
 @import url('./blocks/switch-button/switch-button.css');
-@import url('./blocks/switch-button/switch-button_link.css');
-@import url('./blocks/expanded-box/expanded-box.css');
 @import url('./blocks/play-button/play-button.css');
-@import url('./blocks/playlist/playlist.css');
+@import url('./blocks/video-button/video-button.css');
+
+@import url('./blocks/footer/footer.css');

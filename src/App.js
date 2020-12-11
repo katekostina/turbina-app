@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <body class="body">
+    <body className="body">
     <div className="page">
       <Main />
       <ContentBox />

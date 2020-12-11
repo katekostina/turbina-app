@@ -1,42 +1,32 @@
 .audioplayer_expanded {
   display: grid;
-  grid-template-columns: 40px 1fr 40px;
-  grid-template-rows: 35px 82px 110px;
+  grid-template-columns: 40px min-content 1fr 40px;
+  grid-template-rows: 35px min-content min-content min-content;
   grid-template-areas:
-    "play-button song expander-button"
-    ". switch-button ."
-    ". expanded-box .";
-    animation: audioplayerAnimation 1000ms ease-out ;
+    "play-button song          song             expander-button"
+    ".           cover         cover            ."
+    ".           video-button  switch-button    ."
+    ".           expanded-box  expanded-box     .";
 }
 
 @media screen and (min-width: 768px) {
-    .audioplayer_expanded {
-        display: grid;
-        grid-template-columns: 176px 50px 1fr   60px;
-        grid-template-rows: 37px 152px;
-         grid-template-areas: "album play-button song song switch-button-link switch-button   expander-button"
-
-    }
+  .audioplayer_expanded {
+    display: grid;
+    grid-template-columns: 60px min-content 1fr min-content min-content 69px;
+    grid-template-rows: 37px min-content;
+    grid-template-areas:
+      "play-button song  song         video-button switch-button expander-button"
+      ".           cover expanded-box expanded-box expanded-box  .";
+  }
 }
 
-
-
-
-@keyframes audioplayerAnimation {
-  0% {
-    opacity: 0;
-    transform: translateY(100px);
+@media screen and (min-width: 1024px) {
+  .audioplayer_expanded {
+    display: grid;
+    grid-template-columns: min-content 60px 1fr min-content min-content 69px;
+    grid-template-rows: 37px min-content;
+    grid-template-areas:
+    "cover play-button song         video-button switch-button expander-button"
+    "cover .           expanded-box expanded-box expanded-box  ."
   }
-  20% {
-    opacity: 0.3;
-    transform: translateY(100px);
-  }
-  45% {
-    opacity: 0.6;
-    transform: translateY(100px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  }
+}

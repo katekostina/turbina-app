@@ -14,21 +14,8 @@
   flex-direction: column;
   justify-content: space-between;
   grid-area: song;
-  margin-right: 20px;
 }
 
-.song_expanded{
-  box-sizing: border-box;
-  min-width: 240px;
-  height: 35px;
-  user-select: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  grid-area: song;
-  grid-column-start: 2;
-  grid-column-end: 5
-}
 @media screen and (min-width: 768px) {
   .song {
     height: 37px;
