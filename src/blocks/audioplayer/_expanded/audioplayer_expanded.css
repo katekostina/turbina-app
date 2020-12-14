@@ -8,7 +8,7 @@
     ".           video-button  switch-button    ."
     ".           expanded-box  expanded-box     .";
   /*От этого надо уйти в react-spring*/
-  animation-name: audioplayerAnimation;
+  animation-name: playerAnimationMobile;
   animation-fill-mode: forwards;
   animation-duration: 1s;
   animation-timing-function: ease-out;
@@ -22,6 +22,10 @@
     grid-template-areas:
       "play-button song  song         video-button switch-button expander-button"
       ".           cover expanded-box expanded-box expanded-box  .";
+    animation-name: playerAnimationDesktop;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
   }
 }
 
@@ -36,7 +40,7 @@
   }
 }
 /*От этого надо уйти в react-spring*/
-@keyframes audioplayerAnimation {
+@keyframes playerAnimationDesktop {
   0% {
     height: 50px;
   }
@@ -48,5 +52,20 @@
   }
   100% {
     height: 200px;
+  }
+}
+
+@keyframes playerAnimationMobile {
+  0% {
+    height: 50px;
+  }
+  20% {
+    height: 150px;
+  }
+  45% {
+    height: 300px;
+  }
+  100% {
+    height: 486px;
   }
 }
