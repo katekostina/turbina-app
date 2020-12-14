@@ -8,6 +8,12 @@
   margin: 0 auto;
   /* Добавлены св-ва для отступов по краям*/
   box-sizing: border-box;
+  /* Свойства добавлены чтобы плеер смог двигаться вверх*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  position: relative;
 }
 
 @media screen and (max-width: 350px) {

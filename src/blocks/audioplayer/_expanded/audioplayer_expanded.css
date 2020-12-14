@@ -7,6 +7,11 @@
     ".           cover         cover            ."
     ".           video-button  switch-button    ."
     ".           expanded-box  expanded-box     .";
+  /*От этого надо уйти в react-spring*/
+  animation-name: audioplayerAnimation;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
 }
 
 @media screen and (min-width: 768px) {
@@ -28,5 +33,20 @@
     grid-template-areas:
     "cover play-button song         video-button switch-button expander-button"
     "cover .           expanded-box expanded-box expanded-box  ."
+  }
+}
+/*От этого надо уйти в react-spring*/
+@keyframes audioplayerAnimation {
+  0% {
+    height: 50px;
+  }
+  20% {
+    height: 100px;
+  }
+  45% {
+    height: 150px;
+  }
+  100% {
+    height: 200px;
   }
 }

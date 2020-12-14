@@ -13,7 +13,12 @@
   /* styling scrollbar for firefox */
   scrollbar-width: thin;
   scrollbar-color: rgba(255, 255, 255, 0.3) rgba(243, 243, 243, 0.1);
-  animation: audioplayerAnimation 1000ms ease-out ;
+  /*animation: audioplayerAnimation 1000ms ease-out ;*/
+  /*От этого надо уйти в react-spring*/
+  animation-name: animationForPlayer;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
   margin-bottom: 30px;
 }
 
@@ -47,21 +52,18 @@
   border: 3px solid rgba(255, 255, 255, 0.3);
 }
 
-@keyframes audioplayerAnimation {
+/*От этого надо уйти в react-spring*/
+@keyframes animationForPlayer {
   0% {
     opacity: 0;
-    /* transform: translateY(100px); */
   }
   20% {
-    opacity: 0.3;
-    /* transform: translateY(100px); */
+    opacity: 0;
   }
   45% {
-    opacity: 0.6;
-    /* transform: translateY(100px); */
+    opacity: 0;
   }
   100% {
     opacity: 1;
-    /* transform: translateY(0); */
   }
   }

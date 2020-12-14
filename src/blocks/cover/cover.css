@@ -5,6 +5,11 @@
   border-radius: 4px;
   margin: 0 auto;
   padding-top: 20px;
+  /*От этого надо уйти в react-spring*/
+  animation-name: animationForPlayer;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
 }
 
 @media screen and (min-width: 768px) {
@@ -15,7 +20,7 @@
     padding-right: 30px;
     padding-bottom: 30px;
   }
-} 
+}
 
 @media screen and (min-width: 1024px) {
   .cover {
@@ -25,11 +30,26 @@
     padding-right: 0;
     padding-left: 25px;
   }
-} 
+}
 
 @media screen and (min-width: 1280px) {
   .cover {
     width: 176px;
     height: 176px;
   }
-} 
+}
+/*От этого надо уйти в react-spring*/
+@keyframes animationForPlayer {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
