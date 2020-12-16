@@ -2,9 +2,9 @@ import React from "react";
 import moment from "moment";
 import momentDurationFormatSetup from "moment-duration-format";
 
-function Song({ title, musician, poet,  curTime,  duration, onClick, onPlay, onTimeUpdate }) {
+function Song({ title, musician, poet,  curTime,  duration, onClick}) {
 
-  function formatDuration(duration) {
+  function formatDuration() {
     return moment
       .duration(curTime, "seconds")
       .format("mm:ss", { trim: false });
@@ -27,7 +27,7 @@ function Song({ title, musician, poet,  curTime,  duration, onClick, onPlay, onT
           <span className="song__title"> feat. </span>
           <span className="song__title">{poet}</span>
         </span>
-        <span className="song__timer" onTimeUpdate={onTimeUpdate} onPlay={onPlay}>
+        <span className="song__timer">
           {formatDuration(duration - curTime)}
         </span>
       </div>
