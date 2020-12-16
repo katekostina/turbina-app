@@ -15,8 +15,8 @@ function AudioPlayer() {
   const myPlayer = useRef(null);
   const [expanded, setExpanded] = useState(false);
   const [lyricsShown, setLyricsShown] = useState(songs.length < 2);
-  const [duration, setDuration] = useState();
-  const [curTime, setCurTime] = useState();
+  const [duration, setDuration] = useState(0);
+  const [curTime, setCurTime] = useState(0);
   const [playing, setPlaying] = useState(false);
   const [currentSong, setCurrentSong] = useState(songs[0]);
 
@@ -77,8 +77,8 @@ function AudioPlayer() {
           onPlay={onPlay}
           duration={duration}
           curTime={curTime}
-          onClick={(curTime) => {
-            myPlayer.current.currentTime = curTime;
+          onClick={curTime => {
+           myPlayer.current.currentTime = curTime
           }}
         />
 
