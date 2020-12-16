@@ -1,4 +1,4 @@
-.articles__heading {
+.article__heading {
     max-width: 100%;
     margin: 0 0 30px;
     text-transform: uppercase;
@@ -11,7 +11,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    .articles__heading {
+    .article__heading {
         margin: 0 0 40px;
         font-size: 42px;
         line-height: 51px;
@@ -19,14 +19,14 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .articles__heading {
+    .article__heading {
         font-size: 46px;
         line-height: 56px;
     }
 }
 
 @media screen and (min-width: 1280px) {
-    .articles__heading {
+    .article__heading {
         font-size: 50px;
         line-height: 61px;
     }

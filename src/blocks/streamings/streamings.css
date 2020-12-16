@@ -2,8 +2,8 @@
 @import url('__list/_type_mobile/streamings__list_type_mobile.css');
 @import url('./__link/streamings__link.css');
 @import url('./__list-item/streamings__list-item.css');
-@import url('__oppen-btn/streamings__open-btn.css');
-@import url('__oppen-btn/_is-cliked/streamings__open-btn_is-clicked.css');
+@import url('./__open-btn/streamings__open-btn.css');
+@import url('./__open-btn/_is-cliсked/streamings__open-btn_is-clicked.css');
 
 .streamings {
   display: flex;
