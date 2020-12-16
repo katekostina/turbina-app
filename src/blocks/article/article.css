@@ -1,0 +1,31 @@
+@import url('./__heading/article__heading.css');
+@import url('./__paragraph/article__paragraph.css');
+@import url('./__list/article__list.css');
+@import url('./__list-item/article__list-item.css');
+
+.article {
+    min-width: 270px;
+    max-width: 100%;
+    color: #000;
+    font-family: 'Inter', 'Helvetica', 'Arial', sans-serif;
+    margin: 0 0 60px;
+}
+
+@media screen and (min-width: 768px) {
+    .article {
+        margin: 0 0 80px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .article {
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .article {
+        width: 65.5%;
+        margin: 0 0 90px;
+    }
+}
