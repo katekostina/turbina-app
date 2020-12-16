@@ -74,8 +74,6 @@ function AudioPlayer() {
           title={currentSong.title}
           musician={currentSong.musician}
           poet={currentSong.poet}
-          onTimeUpdate={onTimeUpdate}
-          onPlay={onPlay}
           duration={duration}
           curTime={curTime}
           onClick={curTime => {
