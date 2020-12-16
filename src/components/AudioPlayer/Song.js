@@ -27,7 +27,7 @@ function Song({ title, musician, poet, songTime, onClick, curTime, duration }) {
           <span className="song__title"> feat. </span>
           <span className="song__title">{poet}</span>
         </span>
-        <span className="song__timer" curTime={curTime} duration={duration}>
+        <span className="song__timer" duration={duration}>
           {formatDuration(duration - curTime)}
         </span>
       </div>
