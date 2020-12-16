@@ -1,5 +1,4 @@
 import React from "react";
-// import TextareaAutosize from "react-textarea-autosize"; Убрал из-за того, что с этом компонентом не вышло сделать валидацию
 import { offerLink } from '../utils/linksList';
 import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
