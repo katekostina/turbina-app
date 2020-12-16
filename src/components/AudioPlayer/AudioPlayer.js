@@ -7,6 +7,7 @@ import ExpanderButton from "./ExpanderButton";
 import VideoButton from "./VideoButton";
 import Cover from "./Cover";
 import { songs } from "../../utils/songs.js";
+import throttle from "../../utils/throttling.js"
 const classNames = require("classnames");
 
 
@@ -14,25 +15,19 @@ function AudioPlayer() {
   const myPlayer = useRef(null);
   const [expanded, setExpanded] = useState(false);
   const [lyricsShown, setLyricsShown] = useState(songs.length < 2);
-  const [duration, setDuration] = useState();
-  const [curTime, setCurTime] = useState();
+  const [duration, setDuration] = useState(0);
+  const [curTime, setCurTime] = useState(0);
   const [playing, setPlaying] = useState(false);
   const [currentSong, setCurrentSong] = useState(songs[0]);
 
-  useEffect(() => {
-    const setAudioData = () => {
-      setDuration(myPlayer.current.duration);
-      setCurTime(myPlayer.current.currentTime);
-    };
-    const setAudioTime = () => setCurTime(myPlayer.current.currentTime);
-    myPlayer.current.addEventListener("loadeddata", setAudioData);
-    myPlayer.current.addEventListener("timeupdate", setAudioTime);
 
-    return () => {
-      myPlayer.current.removeEventListener("loadeddata", setAudioData);
-      myPlayer.current.removeEventListener("timeupdate", setAudioTime);
-    };
-  }, []);
+  const onTimeUpdate =  throttle(e => {
+    setCurTime(e.target.currentTime);
+  }, 1000);
+
+  const onPlay= e => {
+    setDuration(e.target.duration);
+  }
 
   useEffect(() => {
     playing ? myPlayer.current.play() : myPlayer.current.pause();
@@ -51,7 +46,12 @@ function AudioPlayer() {
 
   return (
     <>
-      <audio ref={myPlayer} src={currentSong.audio}>
+      <audio
+      ref={myPlayer}
+      src={currentSong.audio}
+      onPlay={onPlay}
+      onTimeUpdate={onTimeUpdate}
+      >
         Your browser does not support the <code>audio</code> element.
       </audio>
 
@@ -73,10 +73,12 @@ function AudioPlayer() {
           title={currentSong.title}
           musician={currentSong.musician}
           poet={currentSong.poet}
+          onTimeUpdate={onTimeUpdate}
+          onPlay={onPlay}
           duration={duration}
           curTime={curTime}
-          onClick={(curTime) => {
-            myPlayer.current.currentTime = curTime;
+          onClick={curTime => {
+           myPlayer.current.currentTime = curTime
           }}
         />
 
