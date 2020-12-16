@@ -31,6 +31,7 @@ function AudioPlayer() {
 
   useEffect(() => {
     playing ? myPlayer.current.play() : myPlayer.current.pause();
+    setDuration(myPlayer.current.duration)
   });
 
   function toggleExpanded() {
