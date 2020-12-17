@@ -1,25 +1,27 @@
 {
   "files": {
-    "main.css": "/turbina-app/static/css/main.aa9002e4.chunk.css",
-    "main.js": "/turbina-app/static/js/main.c83f9514.chunk.js",
-    "main.js.map": "/turbina-app/static/js/main.c83f9514.chunk.js.map",
-    "runtime-main.js": "/turbina-app/static/js/runtime-main.dd1f25b9.js",
-    "runtime-main.js.map": "/turbina-app/static/js/runtime-main.dd1f25b9.js.map",
-    "static/js/2.7eb19baf.chunk.js": "/turbina-app/static/js/2.7eb19baf.chunk.js",
-    "static/js/2.7eb19baf.chunk.js.map": "/turbina-app/static/js/2.7eb19baf.chunk.js.map",
-    "static/js/3.12aca518.chunk.js": "/turbina-app/static/js/3.12aca518.chunk.js",
-    "static/js/3.12aca518.chunk.js.map": "/turbina-app/static/js/3.12aca518.chunk.js.map",
+    "main.css": "/turbina-app/static/css/main.920fc57c.chunk.css",
+    "main.js": "/turbina-app/static/js/main.ea1cf5c4.chunk.js",
+    "main.js.map": "/turbina-app/static/js/main.ea1cf5c4.chunk.js.map",
+    "runtime-main.js": "/turbina-app/static/js/runtime-main.37e9ba5e.js",
+    "runtime-main.js.map": "/turbina-app/static/js/runtime-main.37e9ba5e.js.map",
+    "static/js/2.a3107230.chunk.js": "/turbina-app/static/js/2.a3107230.chunk.js",
+    "static/js/2.a3107230.chunk.js.map": "/turbina-app/static/js/2.a3107230.chunk.js.map",
+    "static/js/3.b04af4c7.chunk.js": "/turbina-app/static/js/3.b04af4c7.chunk.js",
+    "static/js/3.b04af4c7.chunk.js.map": "/turbina-app/static/js/3.b04af4c7.chunk.js.map",
     "index.html": "/turbina-app/index.html",
-    "static/css/main.aa9002e4.chunk.css.map": "/turbina-app/static/css/main.aa9002e4.chunk.css.map",
-    "static/js/2.7eb19baf.chunk.js.LICENSE.txt": "/turbina-app/static/js/2.7eb19baf.chunk.js.LICENSE.txt",
+    "static/css/main.920fc57c.chunk.css.map": "/turbina-app/static/css/main.920fc57c.chunk.css.map",
+    "static/js/2.a3107230.chunk.js.LICENSE.txt": "/turbina-app/static/js/2.a3107230.chunk.js.LICENSE.txt",
     "static/media/index.css": "/turbina-app/static/media/turbina.ac1ad1fa.png",
+    "static/media/Letov.1d5ce73f.jpg": "/turbina-app/static/media/Letov.1d5ce73f.jpg",
+    "static/media/Monetochka.1ed2c000.jpg": "/turbina-app/static/media/Monetochka.1ed2c000.jpg",
     "static/media/gosudarstvo.ecf55fdf.mp3": "/turbina-app/static/media/gosudarstvo.ecf55fdf.mp3",
     "static/media/nazare.58888316.mp3": "/turbina-app/static/media/nazare.58888316.mp3"
   },
   "entrypoints": [
-    "static/js/runtime-main.dd1f25b9.js",
-    "static/js/2.7eb19baf.chunk.js",
-    "static/css/main.aa9002e4.chunk.css",
-    "static/js/main.c83f9514.chunk.js"
+    "static/js/runtime-main.37e9ba5e.js",
+    "static/js/2.a3107230.chunk.js",
+    "static/css/main.920fc57c.chunk.css",
+    "static/js/main.ea1cf5c4.chunk.js"
   ]
 }
